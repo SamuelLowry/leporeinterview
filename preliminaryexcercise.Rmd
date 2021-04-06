@@ -1,0 +1,172 @@
+---
+title: "Preliminary Excercise"
+author: "Samuel Lowry"
+date: "4/5/2021"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, fig.width = 7, fig.height = 4)
+library(tidyverse)
+library(tidyverse)
+library(ggthemes)
+```
+
+Dear Professor Lepore,
+
+Below are my answers to your questions. I conduct all of my work in R using RStudio but am of course willing to learn other languages as the project requires. My GitHub is https://github.com/SamuelLowry, but many of my repositories are private, including the one for this exercise.
+I look forward to meeting at 5 pm! In the meantime, let me know if you have any questions or require anything else before our meeting.  
+
+All the best,
+
+Sam Lowry
+
+```{r}
+d <- read_csv("data.csv",
+              col_types = cols(
+  source_code = col_character(),
+  source_citation = col_character(),
+  source_index_number = col_character(),
+  title_or_description_from_source = col_character(),
+  date_approximation = col_character(),
+  year = col_double(),
+  month = col_double(),
+  day = col_double(),
+  congress = col_double(),
+  congressional_session = col_double(),
+  joint_resolution_chamber = col_logical(),
+  joint_resolution_number = col_logical(),
+  sponsor_name = col_character(),
+  sponsor_state_or_territory = col_character(),
+  committee_of_referral = col_character(),
+  `text of amendment` = col_logical()
+))
+```
+
+
+## Question 1
+### What can be known, and displayed visually, from what exists of the data in this form?
+
+The number of things which could be displayed from these data is quite large, but here are couple that came to mind with the corresponding visualization:
+
+1. Even without going row by row to create categories, we can use basic word searches in the title to track certain topics over time and by state, etc.
+
+```{r}
+one_df <- d %>% 
+  mutate(slave = str_detect(title_or_description_from_source, "slave")) %>% 
+  mutate(alcohol = str_detect(title_or_description_from_source, "alcohol")) %>% 
+  mutate(religion = str_detect(title_or_description_from_source, "religion")) %>% 
+  mutate(abortion = str_detect(title_or_description_from_source, "abortion")) %>% 
+  mutate(Category = case_when(slave == TRUE ~ "Slave",
+                              alcohol == TRUE ~ "Alcohol",
+                              religion == TRUE ~ "Religion",
+                              abortion == TRUE ~ "Abortion")) %>% 
+  drop_na(Category)
+```
+
+```{r}
+one_df %>% 
+  ggplot(aes(x = year, fill = Category)) +
+  geom_density(alpha = .5) +
+  scale_y_sqrt() +
+  labs(title = "Key Words in Proposed Constitutional Amendments Over Time",
+       y = "Density (Scaled by Square Root)",
+       x = "Year",
+       fill = "Key Word") +
+  theme_tufte() +
+  theme(panel.grid = element_line(size = .1))
+```
+
+2. Using the metadata we can track sheer numbers by year and state, etc.
+
+```{r}
+two_df <- d %>% 
+  filter(sponsor_state_or_territory %in% c("Alabama", "Alaska", "Arizona", "Arkansas"))
+
+two_df %>% 
+  ggplot(aes(x = year)) +
+  geom_histogram(fill = "#00BFC4", color = "black", binwidth = 5) +
+  facet_wrap(~sponsor_state_or_territory) +
+  labs(title = "Proposed Constitutional Amendments Over Time",
+       subtitle = 'By States Beginning with "A"',
+       y = "Count (Each Bar Representing Five Years)",
+       x = "Year") +
+  theme_tufte() +
+  theme(panel.grid = element_line(size = .1))
+```
+
+3. We can put the two together and track key words by year and state.
+
+```{r}
+three_df <- two_df %>% 
+  mutate(tax = str_detect(title_or_description_from_source, "tax")) %>% 
+  mutate(alcohol = str_detect(title_or_description_from_source, "alcohol")) %>% 
+  mutate(war = str_detect(title_or_description_from_source, "war")) %>% 
+  mutate(vote = str_detect(title_or_description_from_source, "vote")) %>% 
+  mutate(Category = case_when(tax == TRUE ~ "Tax",
+                              alcohol == TRUE ~ "Alcohol",
+                              war == TRUE ~ "War",
+                              vote == TRUE ~ "Vote")) %>%
+  drop_na(Category)
+
+three_df %>% 
+  ggplot(aes(x = year, fill = sponsor_state_or_territory)) +
+  geom_density(alpha = .5) +
+  facet_wrap(~Category) +
+  scale_y_sqrt() +
+  labs(title = "Key Words in Proposed Constitutional Amendments Over Time",
+       subtitle = 'By States Beginning with "A"',
+       y = "Density (Scaled by Square Root)",
+       x = "Year",
+       fill = "Key Word") +
+  theme_tufte() +
+  theme(panel.grid = element_line(size = .1))
+```
+\pagebreak
+
+4. Individuals and committees can also be thrown into the mix.
+
+```{r}
+four_df <- one_df %>% 
+  filter(committee_of_referral == "Committee on the Judiciary")
+
+four_df %>% 
+  ggplot(aes(x = year, fill = Category)) +
+  geom_density(alpha = .5) +
+  labs(title = "Key Words in Proposed Constitutional Amendments Over Time",
+       subtitle = "By the Committee on the Judiciary",
+       y = "Count",
+       x = "Year",
+       fill = "Key Word") +
+  theme_tufte() +
+  theme(panel.grid = element_line(size = .1))
+```
+
+At this stage, we have the title as well as the date and other metadata. Any visualization will be riffs off of showing either numerical trends in general or of specific key words based on the metadata. 
+
+
+## Question 2
+### What sorts of searches you think users would want to do in this material and what does that mean in terms of what data we need to add?
+
+I envision that users would first love to see some sort of categorization of the amendments as highlighted in the proposal. Second, they would want to view certain amendments based on metadata (including category). Third, they would want to be able to access the full text of the amendment for every row. Lastly, the current status of the amendment may also be desired.
+
+Here is a list of revisions which could improve the data set as well as ideas for additional data:
+
+1. As you discussed with me, a large part of this project will entail categorizing all of the amendments which could then be visualized over time, by state, by committee, and any other metadata we have.
+
+2. For research purposes, also having the full text in each row would be fantastic.
+
+3. In addition, a brief paragraph on context may be helpful (or at least select amendments. Nevertheless, this would be a large undertaking).
+
+4. A main problem is the number of N/As that make the data hard to work with/unreliable. Here is my plan of attack for that:
+
+    a. I would hammer down the dates. This would allow us with a few lines of code to fill out the Congress column.
+    
+    b. I would create a type column (which could also be a series of binary columns) for the method of proposal            (congressional, state convention, etc.). This would clear up confusion as to why some rows don't have some           metadata such as committee while others do. It would also allow for analysis of those various avenues of
+      reform.
+  
+5. Some of the titles are not terribly descriptive such as "Religion" or "Rights reserved." Obviously, we can make some assumptions, but I just want to make sure that individuals know exactly what the amendment was trying to do.
+
+6. For current status, I would create a number of columns including "passed_house", "passed_senate", "number_states_ratified", etc. that would breakdown its path to its current resting place. 
