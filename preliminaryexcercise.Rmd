@@ -42,7 +42,8 @@ d <- read_csv("data.csv",
   sponsor_state_or_territory = col_character(),
   committee_of_referral = col_character(),
   `text of amendment` = col_logical()
-))
+)) 
+
 ```
 
 
@@ -64,6 +65,71 @@ one_df <- d %>%
                               religion == TRUE ~ "Religion",
                               abortion == TRUE ~ "Abortion")) %>% 
   drop_na(Category)
+
+exam <- one_df %>% 
+  mutate(alcohol = ifelse(Category == "Alcohol", 1, 0)) %>% 
+  mutate(alcohol = ifelse(alcohol == 1, "Alcohol", "None")) %>% 
+  mutate(alcohol = factor(alcohol, levels = c("Alcohol", "None")))
+str(exam)
+col
+
+fifteenth_df <- d %>% 
+  mutate(fifteenth = str_detect(title_or_description_from_source, "(?i)fifteenth")) %>% 
+  filter(fifteenth == TRUE)
+
+fifteenth_df %>% 
+  ggplot(aes(x = year, fill = fifteenth)) +
+  geom_histogram(alpha = .5, color = "black", binwidth = 1) +
+  labs(title = "Attempts to Repeal the Fifteenth Amendment",
+       y = "Number of Attempts",
+       x = "Year",
+       caption = "Each bar represents one year") +
+  theme_tufte() +
+  theme(panel.grid = element_line(size = .1), legend.position = "none")
+
+ggsave("fifteenth_plot.png", height = 4, width = 6)
+
+
+```
+
+```{r}
+budget_df <- d %>% 
+  mutate(budget = str_detect(title_or_description_from_source, "(?i)budget")) %>% 
+  filter(budget == TRUE) %>% 
+  mutate(balanc = str_detect(title_or_description_from_source, "(?i)balanc")) %>% 
+  filter(balanc == TRUE)
+  
+
+budget_df %>% 
+  ggplot(aes(x = year, fill = budget)) +
+  geom_histogram(alpha = .5, color = "black", binwidth = 1) +
+  labs(title = "Proposed Balanced Budget Amendments",
+       y = "Number of Proposed Amendments",
+       x = "Year",
+       caption = "Each bar represents one year") +
+  theme_tufte() +
+  theme(panel.grid = element_line(size = .1), legend.position = "none")
+
+ggsave("budget_plot.png", width = 6, height = 4)
+
+nyear_df <- d %>% 
+  group_by(year) %>% 
+  summarize(n = n()) %>% 
+  mutate(y = "y") %>% 
+  drop_na()
+
+
+nyear_df %>% 
+  ggplot(aes(x = year, y = n, fill = y)) +
+  geom_col(alpha = .5, color = "black") +
+  labs(title = "Number of Constitutional Amendments Proposed in Congress",
+       y = "Number of Proposed Amendments",
+       x = "Year",
+       caption = "Each bar represents one year") +
+   theme_tufte() +
+  theme(panel.grid = element_line(size = .1), legend.position = "none")
+
+ggsave("budget_plot.png", width = 6, height = 4)
 ```
 
 ```{r}
@@ -77,6 +143,11 @@ one_df %>%
        fill = "Key Word") +
   theme_tufte() +
   theme(panel.grid = element_line(size = .1))
+
+ggsave("keywords_plot.png")
+
+
+
 ```
 
 2. Using the metadata we can track sheer numbers by year and state, etc.
