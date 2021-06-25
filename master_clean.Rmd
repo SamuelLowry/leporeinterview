@@ -1,0 +1,91 @@
+---
+title: "Data Cleaning"
+author: "Samuel Lowry"
+date: "6/24/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(stringr)
+library(lubridate)
+library(tidyverse)
+```
+
+```{r}
+staterat_df <- read.csv("data/State Ratifying in National Archives Format - scratch work.csv") 
+```
+
+```{r}
+staterat_df <- staterat_df %>% 
+  mutate(source_citation = str_c(source_citation, ",  ", text_source_citation))
+  
+```
+
+```{r}
+staterat_df <- staterat_df %>% 
+  mutate(date = make_date(year, month, day))
+```
+
+```{r}
+nara_df <- read.csv("data/Master Sheet - Master Sheet.csv") 
+
+
+nara_df <- nara_df %>% 
+  replace_na(list(day = 25, month = 12))
+        
+
+```
+
+```{r}
+nara_df <- nara_df %>% 
+  mutate(date = make_date(year, month, day)) %>% 
+  
+
+write.csv(nara_df, "/Users/samlowry/iCloud Drive (Archive) - 1/Documents/rstudio/my_work/leporeinterview/data/master.csv")
+```
+
+```{r}
+non_df <- read_csv("data/Master Sheet - Scratch Work.csv", skip = 1)
+
+non_df <- non_df %>% 
+  mutate(month = match(month, month.name)) %>% 
+  mutate(date = make_date(year, month, day)) %>% 
+  mutate(text_of_amendment = str_sub(text_of_amendment, 2, -2)) %>% 
+  select(text_of_amendment)
+```
+
+
+
+
+
+
+```{r}
+final_df <- read_csv("data/Master Sheet - Master Sheet.csv")
+
+final_df <- final_df %>% 
+  mutate(ratified_yn = substring(ratified_yn, 1, 1)) %>% 
+  mutate(id = row_number()) 
+  
+write.csv(final_df, "/Users/samlowry/iCloud Drive (Archive) - 1/Documents/rstudio/my_work/leporeinterview/data/final.csv")
+
+date_df <- final_df %>% 
+  mutate(year = str_sub(date, 1, 4)) %>% 
+  mutate(md = str_sub(date, 6, 10)) %>% 
+  mutate(md = as.character(md)) %>% 
+  mutate(md = if_else(md=="12-25", "00-00",md)) %>% 
+  mutate(date = str_c(year, "-", md))
+
+%>% 
+  mutate(date = as.Date(date))
+
+%>% 
+  mutate(date = ymd(date))
+
+
+
+
+?if_else
+
+```
+

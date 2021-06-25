@@ -129,7 +129,7 @@ nyear_df %>%
    theme_tufte() +
   theme(panel.grid = element_line(size = .1), legend.position = "none")
 
-ggsave("budget_plot.png", width = 6, height = 4)
+ggsave("nyear_plot.png", width = 6, height = 4)
 ```
 
 ```{r}
