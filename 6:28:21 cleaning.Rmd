@@ -1,0 +1,199 @@
+---
+title: "Cleaning"
+author: "Samuel Lowry"
+date: "6/28/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(stringr)
+library(lubridate)
+library(janitor)
+library(tidyverse)
+```
+
+```{r}
+reps_df <- read_csv("data/scratchwork - reps-2.csv")
+
+sen_df <- read_csv("data/scratchwork - sens.csv")
+
+hist_df <- read_csv("data/legislators-historical.csv")
+```
+
+
+```{r}
+reps_df <- reps_df %>% 
+  clean_names() %>% 
+  mutate(year = str_sub(congress_years, 6, -7),
+         year = str_remove(year, "[[:punct:]]"),
+         year = str_trim(year),
+         year = str_sub(year, 1, 4)) %>% 
+  slice(rep(1:n(), each = 2)) %>% 
+  mutate(add = if_else(year == lag(year), "1", "0")) %>% 
+  replace_na(list(add = 0)) %>% 
+  mutate(year = as.numeric(year) + as.numeric(add))
+
+n_df <- left_join(reps_df, sen_df) %>% 
+  mutate(congress_n = n + senators) %>% 
+  select(year, congress_n) %>% 
+  drop_na()
+
+```
+
+```{r}
+#from
+#https://voteview.com/articles/party_polarization
+
+nom_dat <- read_csv("https://voteview.com/static/data/out/members/HSall_members.csv")
+
+south <- c(40:49,51,53)
+polar_dat <- nom_dat %>% 
+    filter(congress>45 & 
+           chamber != "President") %>%
+    mutate( 
+      year = 2*(congress-1) + 1789,
+    ) %>%
+    group_by(chamber,congress,year) %>% 
+    summarize(
+      party.mean.diff.d1 = mean(nominate_dim1[party_code==200],na.rm=T) - 
+                           mean(nominate_dim1[party_code==100],na.rm=T),
+      prop.moderate.d1 = mean(abs(nominate_dim1)<0.25,na.rm=T),
+      prop.moderate.dem.d1 = mean(abs(nominate_dim1[party_code==100])<0.25,na.rm=T),
+      prop.moderate.rep.d1 = mean(abs(nominate_dim1[party_code==200])<0.25,na.rm=T),
+      overlap = (sum(nominate_dim1[party_code==200] <
+                       max(nominate_dim1[party_code==100],na.rm=T),na.rm=T)  +
+                 sum(nominate_dim1[party_code==100] >
+                       min(nominate_dim1[party_code==200],na.rm=T),na.rm=T))/
+                 (sum(!is.na(nominate_dim1[party_code==100]))+
+                  sum(!is.na(nominate_dim1[party_code==200]))),
+      chamber.mean.d1 = mean(nominate_dim1,na.rm=T),
+      chamber.mean.d2 = mean(nominate_dim2,na.rm=T),
+      dem.mean.d1 = mean(nominate_dim1[party_code==100],na.rm=T),
+      dem.mean.d2 = mean(nominate_dim2[party_code==100],na.rm=T),
+      rep.mean.d1 = mean(nominate_dim1[party_code==200],na.rm=T),
+      rep.mean.d2 = mean(nominate_dim2[party_code==200],na.rm=T),
+      north.rep.mean.d1 = mean(nominate_dim1[party_code==200 & 
+                                             !(state_icpsr %in% south)],na.rm=T),    
+      north.rep.mean.d2 = mean(nominate_dim2[party_code==200 & 
+                                             !(state_icpsr %in% south)],na.rm=T),    
+      south.rep.mean.d1 = mean(nominate_dim1[party_code==200 & 
+                                              (state_icpsr %in% south)],na.rm=T),    
+      south.rep.mean.d2 = mean(nominate_dim2[party_code==200 & 
+                                             (state_icpsr %in% south)],na.rm=T),    
+      north.dem.mean.d1 = mean(nominate_dim1[party_code==100 & 
+                                              !(state_icpsr %in% south)],na.rm=T),    
+      north.dem.mean.d2 = mean(nominate_dim2[party_code==100 & 
+                                              !(state_icpsr %in% south)],na.rm=T),    
+      south.dem.mean.d1 = mean(nominate_dim1[party_code==100 & 
+                                              (state_icpsr %in% south)],na.rm=T),    
+      south.dem.mean.d2 = mean(nominate_dim2[party_code==100 & 
+                                              (state_icpsr %in% south)],na.rm=T),    
+    ) 
+
+polar_df <- polar_dat %>%
+  group_by(year) %>% 
+  summarize(polar = mean(party.mean.diff.d1)) %>% 
+  slice(rep(1:n(), each = 2)) %>% 
+  mutate(add = if_else(year == lag(year), "1", "0")) %>% 
+  replace_na(list(add = 0)) %>% 
+  mutate(year = as.numeric(year) + as.numeric(add)) %>% 
+  select(year, polar)
+```
+
+```{r}
+men_df <- read_csv("data/legislators-historical copy.csv") %>% 
+  clean_names() %>% 
+  filter(terms_0_party %in% c("Republican", "Democrat")) %>% 
+  mutate(end_year = str_sub(terms_0_end, 1, 4)) 
+
+
+congress_dates <- read_csv("data/congress_dates.csv") %>% 
+  drop_na() %>% 
+  clean_names() %>% 
+  mutate(congress = str_extract_all(congress, "[0-9.]+")) %>% 
+  mutate(congress_began = mdy(congress_began),
+         congress_ended = mdy(congress_ended))
+
+master_df <- read_csv("data/Master Sheet - Master Sheet.csv") %>% 
+  filter(source_group == "NARA") %>%
+  mutate(year = as.double(str_sub(date, 1, 4))) 
+
+%>% 
+  left_join(n_df) %>% 
+  left_join(polar_df)
+
+%>% 
+  left_join(polar_df)
+  
+  
+  right_join()
+
+  florida <- master_df %>% 
+    filter(sponsor_state_or_territory == "Florida")
+    
+```
+
+```{r}
+
+nyear_df <- master_df %>% 
+  group_by(year) %>% 
+  summarize(n = n()) %>% 
+  mutate(y = "y") %>% 
+  drop_na() %>% 
+  left_join(n_df) %>% 
+  mutate(rat = n/congress_n)
+
+graphpolar_df <- nyear_df %>% 
+  left_join(polar_df) %>% 
+  filter(year > 1878)
+
+summary(lm(n ~ polar, graphpolar_df))
+
+%>% 
+  mutate(n = n/1000)
+
+
+
+nyear_df %>% 
+  ggplot(aes(x = year, y = n, fill = y)) +
+  geom_col(alpha = .5, color = "black") +
+  geom_col(aes(x = year, y = polar)) +
+  geom_line(color = polar ) +
+  labs(title = "Constitutional Amendments Proposed in Congress per Congressperson",
+       y = "Number of Proposed Amendments per Congressperson",
+       x = "Year",
+       caption = "Each bar represents one year") +
+   theme_tufte() +
+  theme(panel.grid = element_line(size = .1), legend.position = "none")
+
+nyear_df %>% 
+  ggplot() +
+  geom_line(aes(y = congress_n, x = year, alpha = 1)) +
+  geom_col(aes(x = year, y = n, fill = y), alpha = .5, color = "black") +
+  labs(title = "Constitutional Amendments and Size of Congress",
+       y = "Proposed Amendments | Number of Congresspeople",
+       x = "Year",
+       caption = "Each bar represents one year") +
+   theme_tufte() +
+  theme(panel.grid = element_line(size = .1), legend.position = "none")
+
+graphpolar_df %>% 
+  ggplot() +
+  geom_line(aes(y = polar, x = year, alpha = 1)) +
+  geom_col(aes(x = year, y = n, fill = y), alpha = .5, color = "black") +
+  labs(title = "Constitutional Amendments and Congressional Polarization",
+       y = "1,000 Proposed Amendments | Mean Polarization",
+       x = "Year",
+       caption = "Each bar represents one year") +
+   theme_tufte() +
+  theme(panel.grid = element_line(size = .1), legend.position = "none")
+
+ggsave("data/polar_plot.png", width = 6, height = 4)
+
+?geom_den
+
+
+```
+
+

@@ -1,0 +1,24 @@
+---
+title: "Data for Rachel"
+author: "Samuel Lowry"
+date: "7/28/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+```
+
+```{r}
+ids_df <- read_csv("data/rachel_ids.csv")
+
+master_df <- read_csv("data/master_7:27:21.csv")
+
+subset_df <- left_join(ids_df, master_df)
+
+subset_df %>% 
+  write_csv("data/parental_rights.csv")
+
+```
+

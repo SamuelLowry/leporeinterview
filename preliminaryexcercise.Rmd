@@ -24,7 +24,7 @@ All the best,
 Sam Lowry
 
 ```{r}
-d <- read_csv("data.csv",
+d <- read_csv("data/data.csv",
               col_types = cols(
   source_code = col_character(),
   source_citation = col_character(),
