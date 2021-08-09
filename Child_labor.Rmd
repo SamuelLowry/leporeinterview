@@ -1,0 +1,50 @@
+---
+title: "Child Labor Amendment"
+author: "Samuel Lowry"
+date: "8/6/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(stringr)
+library(ggthemes)
+```
+
+```{r}
+child_df <- read_csv("data/master_8:5:21.csv") %>% 
+  mutate(child_title = str_detect(title_or_description_from_source, "(?i)child")) %>% 
+  mutate(child_text = str_detect(text_of_amendment, "(?i)child")) %>% 
+  mutate(child = case_when(child_title == TRUE ~ TRUE,
+                           child_text == TRUE ~ TRUE,
+                           TRUE ~ FALSE)) %>% 
+  filter(child == TRUE)
+
+child_df %>% 
+  write_csv("data/child_df.csv")
+
+#then manually went through and selected all to do with child labor (some were about abortion or marriage, etc.)
+
+child_df <- read_csv("data/child_df.csv") %>% 
+  mutate(year = as.numeric(str_sub(date, 1, 4)))
+
+child_df %>% 
+  ggplot(aes(x = year)) +
+  geom_histogram(binwidth = 1, alpha = .9, color = "black", fill = "navy") +
+  labs(title = "Proposed Child Labor Amendments",
+       y = "Number of Proposed Amendments",
+       x = "Year",
+       caption = "Each bar represents one year") +
+  geom_vline(xintercept = 1941, linetype = "dashed", color = "red") +
+  geom_text(aes(x = 1933, y = 8), family = "Times New Roman", label = "United States v. Darby Lumber Co. (1941)", color = "red") +
+   theme_tufte() +
+  theme(panel.grid = element_line(size = .1), legend.position = "none")
+
+ggsave("plots/childlabor_plot.png", width = 6, height = 4)
+
+
+
+
+```
+

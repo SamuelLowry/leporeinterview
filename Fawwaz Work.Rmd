@@ -1,0 +1,223 @@
+---
+title: "Fawwaz Graphs"
+author: "Samuel Lowry"
+date: "8/8/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(stringr)
+library(ggthemes)
+```
+
+```{r}
+sp_df <- read_csv("data/master_8:5:21.csv") %>%
+  mutate(year = as.numeric(str_sub(date, 1, 4))) %>% 
+  mutate(sp_title = str_detect(title_or_description_from_source, "(?i)supreme (?i)court")) %>% 
+  mutate(sp_text = str_detect(text_of_amendment, "(?i)supreme (?i)court")) %>% 
+  mutate(sp = case_when(sp_title == TRUE ~ TRUE,
+                           sp_text == TRUE ~ TRUE,
+                           TRUE ~ FALSE)) %>% 
+  filter(sp == TRUE)
+
+sp_df %>% 
+  ggplot(aes(x = year)) +
+  geom_histogram(binwidth = 5, alpha = .9, color = "black", fill = "navy") +
+  labs(title = "Proposed Amendments that Mention the 'Supreme Court'",
+       y = "Number of Proposed Amendments",
+       x = "Year",
+       caption = "Each bar represents five years") +
+   theme_tufte() +
+  theme(panel.grid = element_line(size = .1), legend.position = "none")
+
+ggsave("plots/faw_sp_plot.png", width = 6, height = 4)
+```
+
+
+```{r}
+conf_df <- read_csv("data/master_8:5:21.csv") %>% 
+  mutate(year = as.numeric(str_sub(date, 1, 4))) %>% 
+  mutate(conf_title = str_detect(title_or_description_from_source, "(?i)confession")) %>% 
+  mutate(conf_text = str_detect(text_of_amendment, "(?i)confession")) %>% 
+  mutate(conf = case_when(conf_title == TRUE ~ TRUE,
+                           conf_text == TRUE ~ TRUE,
+                           TRUE ~ FALSE)) %>% 
+  filter(conf == TRUE) %>% 
+  select(year)
+
+conf_df %>% 
+  ggplot(aes(x = year)) +
+  geom_histogram(binwidth = 1, alpha = .9, color = "black", fill = "navy") +
+  labs(title = "Proposed Amendments that Mention 'Confession'",
+       y = "Number of Proposed Amendments",
+       x = "Year",
+       caption = "Each bar represents one year") +
+  geom_vline(xintercept = 1966, linetype = "dashed", color = "red") +
+  geom_text(aes(x = 1956, y = 1.3), family = "Times New Roman", label = "Miranda v. Arizona (1966)", color = "red") +
+   theme_tufte() +
+  theme(panel.grid = element_line(size = .1), legend.position = "none")
+
+ggsave("plots/faw_conf_plot.png", width = 6, height = 4)
+```
+
+
+```{r}
+self_df <- read_csv("data/master_8:5:21.csv") %>% 
+  mutate(year = as.numeric(str_sub(date, 1, 4))) %>% 
+  mutate(selfi_title = str_detect(title_or_description_from_source, "(?i)self-(?i)incrimination")) %>% 
+  mutate(selfi_text = str_detect(text_of_amendment, "(?i)self-(?i)incrimination")) %>% 
+  mutate(self_title = str_detect(title_or_description_from_source, "(?i)self (?i)incrimination")) %>% 
+  mutate(self_text = str_detect(text_of_amendment, "(?i)self (?i)incrimination")) %>% 
+  mutate(self = case_when(self_title == TRUE ~ TRUE,
+                           self_text == TRUE ~ TRUE,
+                          selfi_title == TRUE ~ TRUE,
+                           selfi_text == TRUE ~ TRUE,
+                           TRUE ~ FALSE)) %>% 
+  filter(self == TRUE) %>% 
+  select(year)
+
+self_df %>% 
+  ggplot(aes(x = year)) +
+  geom_histogram(binwidth = 5, alpha = .9, color = "black", fill = "navy") +
+  labs(title = "Proposed Amendments that Mention 'Self-Incrimination'",
+       y = "Number of Proposed Amendments",
+       x = "Year",
+       caption = "Each bar represents five years") +
+  geom_vline(xintercept = 1966, linetype = "dashed", color = "red") +
+  geom_text(aes(x = 1932, y = 1.7), family = "Times New Roman", label = "Miranda v. Arizona (1966)", color = "red") +
+   theme_tufte() +
+  theme(panel.grid = element_line(size = .1), legend.position = "none")
+
+ggsave("plots/faw_self_plot.png", width = 6, height = 4)
+```
+
+
+```{r}
+comb_df <- rbind(conf_df, self_df)
+
+comb_df %>% 
+  ggplot(aes(x = year)) +
+  geom_histogram(binwidth = 5, alpha = .9, color = "black", fill = "navy") +
+  labs(title = "Proposed Amendments that Mention 'Confession' or 'Self-Incrimination'",
+       y = "Number of Proposed Amendments",
+       x = "Year",
+       caption = "Each bar represents five years") +
+  geom_vline(xintercept = 1966, linetype = "dashed", color = "red") +
+  geom_text(aes(x = 1929, y = 2.7), family = "Times New Roman", label = "Miranda v. Arizona (1966)", color = "red") +
+   theme_tufte() +
+  theme(panel.grid = element_line(size = .1), legend.position = "none")
+
+ggsave("plots/faw_comb_plot.png", width = 6, height = 4)
+
+```
+
+
+```{r}
+life_df <- read_csv("data/master_8:5:21.csv") %>% 
+  mutate(year = as.numeric(str_sub(date, 1, 4))) %>% 
+  mutate(life_title = str_detect(title_or_description_from_source, "(?i)life")) %>% 
+  mutate(abort_title = str_detect(title_or_description_from_source, "(?i)abortion")) %>% 
+  mutate(life_text = str_detect(text_of_amendment, "(?i)life")) %>%
+  mutate(abort_text = str_detect(text_of_amendment, "(?i)abortion")) %>% 
+  mutate(life = case_when(life_title == TRUE ~ TRUE,
+                           life_text == TRUE ~ TRUE,
+                          abort_title == TRUE ~ TRUE,
+                           abort_text == TRUE ~ TRUE,
+                           TRUE ~ FALSE)) %>% 
+  filter(life == TRUE)
+
+life_df %>% 
+  ggplot(aes(x = year)) +
+  geom_histogram(binwidth = 5, alpha = .9, color = "black", fill = "navy") +
+  labs(title = "Proposed Amendments that Mention 'Life' or 'Abortion'",
+       y = "Number of Proposed Amendments",
+       x = "Year",
+       caption = "Each bar represents five years") +
+  geom_vline(xintercept = 1973, linetype = "dashed", color = "red") +
+  geom_text(aes(x = 1942, y = 90), family = "Times New Roman", label = "Roe v. Wade (1973)", color = "red") +
+   theme_tufte() +
+  theme(panel.grid = element_line(size = .1), legend.position = "none")
+
+ggsave("plots/faw_life_plot.png", width = 6, height = 4)
+```
+
+
+```{r}
+flag_df <- read_csv("data/master_8:5:21.csv") %>% 
+  mutate(year = as.numeric(str_sub(date, 1, 4))) %>% 
+  mutate(flag_title = str_detect(title_or_description_from_source, "(?i)flag")) %>% 
+  mutate(flag_text = str_detect(text_of_amendment, "(?i)flag")) %>% 
+  mutate(flag = case_when(flag_title == TRUE ~ TRUE,
+                           flag_text == TRUE ~ TRUE,
+                           TRUE ~ FALSE)) %>% 
+  filter(flag == TRUE)
+
+flag_df %>% 
+  ggplot(aes(x = year)) +
+  geom_histogram(binwidth = 5, alpha = .9, color = "black", fill = "navy") +
+  labs(title = "Proposed Amendments that Mention 'Flag'",
+       y = "Number of Proposed Amendments",
+       x = "Year",
+       caption = "Each bar represents five years") +
+  geom_vline(xintercept = 1989, linetype = "dashed", color = "red") +
+  geom_text(aes(x = 1970, y = 35), family = "Times New Roman", label = "Texas v. Johnson (1989)", color = "red") +
+   theme_tufte() +
+  theme(panel.grid = element_line(size = .1), legend.position = "none")
+
+ggsave("plots/faw_flag_plot.png", width = 6, height = 4)
+```
+
+
+```{r}
+pray_df <- read_csv("data/master_8:5:21.csv") %>% 
+  mutate(year = as.numeric(str_sub(date, 1, 4))) %>% 
+  mutate(pray_title = str_detect(title_or_description_from_source, "(?i)prayer")) %>% 
+  mutate(pray_text = str_detect(text_of_amendment, "(?i)prayer")) %>% 
+  mutate(pray = case_when(pray_title == TRUE ~ TRUE,
+                           pray_text == TRUE ~ TRUE,
+                           TRUE ~ FALSE)) %>% 
+  filter(pray == TRUE)
+
+pray_df %>% 
+  ggplot(aes(x = year)) +
+  geom_histogram(binwidth = 5, alpha = .9, color = "black", fill = "navy") +
+  labs(title = "Proposed Amendments that Mention 'Prayer'",
+       y = "Number of Proposed Amendments",
+       x = "Year",
+       caption = "Each bar represents five years") +
+  geom_vline(xintercept = 1962, linetype = "dashed", color = "red") +
+  geom_text(aes(x = 1977, y = 190), family = "Times New Roman", label = "Engel v. Vitale (1962)", color = "red") +
+   theme_tufte() +
+  theme(panel.grid = element_line(size = .1), legend.position = "none")
+
+ggsave("plots/faw_pray_plot.png", width = 6, height = 4)
+```
+
+
+```{r}
+cont_df <- read_csv("data/master_8:5:21.csv") %>% 
+  mutate(year = as.numeric(str_sub(date, 1, 4))) %>%
+  mutate(cont_title = str_detect(title_or_description_from_source, "(?i)contribution")) %>% 
+  mutate(cont_text = str_detect(text_of_amendment, "(?i)contribution")) %>% 
+  mutate(cont = case_when(cont_title == TRUE ~ TRUE,
+                           cont_text == TRUE ~ TRUE,
+                           TRUE ~ FALSE)) %>% 
+  filter(cont == TRUE)
+
+cont_df %>% 
+  ggplot(aes(x = year)) +
+  geom_histogram(binwidth = 5, alpha = .9, color = "black", fill = "navy") +
+  labs(title = "Proposed Amendments that Mention 'Contribution'",
+       y = "Number of Proposed Amendments",
+       x = "Year",
+       caption = "Each bar represents five years") +
+  geom_vline(xintercept = 1976, linetype = "dashed", color = "red") +
+  geom_text(aes(x = 1960, y = 6.5), family = "Times New Roman", label = "Buckley v. Valeo (1976)", color = "red") +
+   theme_tufte() +
+  theme(panel.grid = element_line(size = .1), legend.position = "none")
+
+ggsave("plots/faw_cont_plot.png", width = 6, height = 4)
+```
+
