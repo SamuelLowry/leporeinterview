@@ -1,0 +1,224 @@
+---
+title: "Tagging"
+author: "Samuel Lowry"
+date: "8/10/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(stringr)
+```
+
+```{r}
+master_df <- read_csv("data/master_8:5:21.csv")%>% 
+  mutate(date = as.Date(date))
+
+child_df <- read_csv("data/child_df.csv") %>% 
+  select(-child, -child_text, -child_title) %>% 
+  mutate(date = as.Date(date))
+```
+
+```{r}
+
+###This is how I will add all the tags!
+id_df <- child_df %>% 
+  select(id, title_or_description_from_source)
+
+test_df <- left_join(master_df, id_df, by = "id") %>% 
+  subset(is.na(title_or_description_from_source.y)) %>% 
+  select(-title_or_description_from_source.y) %>% 
+  rename(title_or_description_from_source = title_or_description_from_source.x) %>% 
+  rbind(child_df)
+
+test_df %>% 
+write_csv("data/master.csv")
+
+```
+
+```{r}
+master_df <- read_csv("data/master.csv")
+  
+```
+
+```{r}
+life_df <- read_csv("data/master.csv") %>% 
+  mutate(year = as.numeric(str_sub(date, 1, 4))) %>% 
+  mutate(life_title = str_detect(title_or_description_from_source, "(?i)life")) %>% 
+  mutate(abort_title = str_detect(title_or_description_from_source, "(?i)abortion")) %>% 
+  mutate(life_text = str_detect(text_of_amendment, "(?i)life")) %>%
+  mutate(abort_text = str_detect(text_of_amendment, "(?i)abortion")) %>% 
+  mutate(life = case_when(life_title == TRUE ~ TRUE,
+                           life_text == TRUE ~ TRUE,
+                          abort_title == TRUE ~ TRUE,
+                           abort_text == TRUE ~ TRUE,
+                           TRUE ~ FALSE)) %>% 
+  filter(life == TRUE)
+
+life_df %>% 
+  write_csv("data/life_df.csv") 
+
+#manual manipulation and cleaning
+
+life_df <- read_csv("data/life_df.csv") %>% 
+  select( -year, -life, -life_title, -life_text, -abort_title, -abort_text)
+
+id_df <- life_df %>% 
+  select(id, title_or_description_from_source)
+
+test_df <- left_join(master_df, id_df, by = "id") %>% 
+  subset(is.na(title_or_description_from_source.y)) %>% 
+  select(-title_or_description_from_source.y) %>% 
+  rename(title_or_description_from_source = title_or_description_from_source.x) %>% 
+  rbind(life_df)
+
+test_df %>% write_csv("data/master.csv")
+```
+
+
+```{r}
+master_df <- read.csv("data/master.csv")
+
+
+flag_df <- read_csv("data/master.csv") %>% 
+  mutate(flag_title = str_detect(title_or_description_from_source, "(?i)flag")) %>% 
+  mutate(flag_text = str_detect(text_of_amendment, "(?i)flag")) %>% 
+  mutate(flag = case_when(flag_title == TRUE ~ TRUE,
+                           flag_text == TRUE ~ TRUE,
+                           TRUE ~ FALSE)) %>% 
+  filter(flag == TRUE)
+
+flag_df %>% 
+  write_csv("data/flag.csv")
+
+flag_df <- read_csv("data/flag.csv") %>% 
+  select(-flag, -flag_title, -flag_text)
+
+id_df <- flag_df %>% 
+  select(id, title_or_description_from_source)
+
+test_df <- left_join(master_df, id_df, by = "id") %>% 
+  subset(is.na(title_or_description_from_source.y)) %>% 
+  select(-title_or_description_from_source.y) %>% 
+  rename(title_or_description_from_source = title_or_description_from_source.x) %>% 
+  rbind(flag_df)
+
+test_df %>% write_csv("data/master.csv")
+
+master_df <- read.csv("data/master.csv")
+
+
+```
+
+```{r}
+balance_df <- read_csv("data/master.csv") %>% 
+  mutate(flag_title = str_detect(title_or_description_from_source, "(?i)budget")) %>% 
+  mutate(flag_text = str_detect(text_of_amendment, "(?i)budget")) %>% 
+  mutate(flag = case_when(flag_title == TRUE ~ TRUE,
+                           flag_text == TRUE ~ TRUE,
+                           TRUE ~ FALSE)) %>% 
+  filter(flag == TRUE)
+
+balance_df %>% 
+  write_csv("data/balance.csv")
+
+balance_df <- read_csv("data/balance.csv") %>% 
+  mutate(flag_title = str_detect(title_or_description_from_source, "(?i)balanc")) %>% 
+  mutate(flag_text = str_detect(text_of_amendment, "(?i)balanc")) %>% 
+  mutate(flag = case_when(flag_title == TRUE ~ TRUE,
+                           flag_text == TRUE ~ TRUE,
+                           TRUE ~ FALSE)) %>% 
+  filter(flag == TRUE)
+
+balance_df %>% 
+  write_csv("data/balance.csv")
+
+balance_df <- read_csv("data/balance.csv") %>% 
+  select(-flag, -flag_title, -flag_text)
+  
+id_df <- balance_df %>% 
+  select(id, title_or_description_from_source)
+
+test_df <- left_join(master_df, id_df, by = "id") %>% 
+  subset(is.na(title_or_description_from_source.y)) %>% 
+  select(-title_or_description_from_source.y) %>% 
+  rename(title_or_description_from_source = title_or_description_from_source.x) %>% 
+  rbind(balance_df)
+
+test_df %>% write_csv("data/master.csv")
+
+master_df <- read.csv("data/master.csv")
+
+group_df<-master_df %>% 
+  group_by(title_or_description_from_source) %>%
+  summarize(n = n())
+
+era_df <- master_df %>% 
+  filter(title_or_description_from_source %in% c("Proposal for equal rights for men and women", "Relative to equal rights for men and women", "Proposal relative to equal rights for men and women")) %>% 
+  mutate(constitute_topic1 = "equalgr1+")
+
+era_df %>% 
+write_csv("data/era.csv")
+
+era_df <- read_csv("data/era.csv")
+
+
+```
+
+```{r}
+id_df <- era_df %>% 
+  select(id, title_or_description_from_source)
+
+test_df <- left_join(master_df, id_df, by = "id") %>% 
+  subset(is.na(title_or_description_from_source.y)) %>% 
+  select(-title_or_description_from_source.y) %>% 
+  rename(title_or_description_from_source = title_or_description_from_source.x) %>% 
+  rbind(era_df)
+
+test_df %>% write_csv("data/master.csv")
+
+master_df <- read.csv("data/master.csv")
+```
+
+
+```{r}
+
+#Proposal relative to equal rights for men and women
+#next one up
+
+subset_df <- master_df %>% 
+  filter(title_or_description_from_source %in% c("Providing for presidential veto of separate items in appropriation bills", "Proposing an amendment to the Constitution of the United States allowing an item veto in appropriations bills.", "Proposing an amendment to the Constitution of the United States to authorize the line item veto.", "To permit veto of items in appropriation bills", "Item veto for appropriations bills", "Item veto or reduction of appropriations bills", "Veto items in appropriation bills", "Empowers the President to veto individual items in general appropriation bills")) %>%
+  mutate(constitute_topic1 = "legapp")
+
+
+         constitute_topic2 = "depexec")
+
+
+
+id_df <- subset_df %>% 
+  select(id, title_or_description_from_source)
+
+test_df <- left_join(master_df, id_df, by = "id") %>% 
+  subset(is.na(title_or_description_from_source.y)) %>% 
+  select(-title_or_description_from_source.y) %>% 
+  rename(title_or_description_from_source = title_or_description_from_source.x) %>% 
+  rbind(subset_df)
+
+test_df %>% write_csv("data/master.csv")
+
+master_df <- read.csv("data/master.csv")
+
+master_df <- master_df %>% 
+  arrange(id) %>% 
+  head(12183)
+
+
+)
+  
+  
+  drop_na(constitute_topic1)
+
+```
+
+
