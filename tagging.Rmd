@@ -184,10 +184,21 @@ master_df <- read.csv("data/master.csv")
 
 ```{r}
 
-#Proposal relative to equal rights for men and women
+#Fixing the commencement of the terms of President and Vice President and Members of Congress and fixing the time of assembling of Congress
 #next one up
 
-subset_df <- master_df %>% 
+
+
+subset_df <- read_csv("data/master.csv") %>% 
+  mutate(pol = str_detect(title_or_description_from_source, "(?i)president")) %>% 
+  filter(pol == TRUE) %>% 
+  select(-pol) %>% 
+  mutate(x = is.na(constitute_topic1)) %>% 
+  filter(x == TRUE)
+
+%>% 
+  mutate(constitute_topic1 = "marriage")
+  
   filter(title_or_description_from_source %in% c("Providing for presidential veto of separate items in appropriation bills", "Proposing an amendment to the Constitution of the United States allowing an item veto in appropriations bills.", "Proposing an amendment to the Constitution of the United States to authorize the line item veto.", "To permit veto of items in appropriation bills", "Item veto for appropriations bills", "Item veto or reduction of appropriations bills", "Veto items in appropriation bills", "Empowers the President to veto individual items in general appropriation bills")) %>%
   mutate(constitute_topic1 = "legapp")
 
@@ -209,15 +220,11 @@ test_df %>% write_csv("data/master.csv")
 
 master_df <- read.csv("data/master.csv")
 
-master_df <- master_df %>% 
-  arrange(id) %>% 
-  head(12183)
 
 
-)
   
-  
-  drop_na(constitute_topic1)
+
+
 
 ```
 
