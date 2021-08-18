@@ -189,15 +189,43 @@ master_df <- read.csv("data/master.csv")
 
 
 
+
+
 subset_df <- read_csv("data/master.csv") %>% 
-  mutate(pol = str_detect(title_or_description_from_source, "(?i)president")) %>% 
-  filter(pol == TRUE) %>% 
-  select(-pol) %>% 
-  mutate(x = is.na(constitute_topic1)) %>% 
-  filter(x == TRUE)
+  mutate(pol = str_detect(title_or_description_from_source, "(?i)electoral (?i)college")) %>% 
+  filter(pol == TRUE)%>% 
+  select(-pol)
+
+subset_df %>% write_csv("data/subset.csv")
+
+
+subset_df <- read_csv("data/subset.csv")
+
 
 %>% 
-  mutate(constitute_topic1 = "marriage")
+  mutate(constitute_topic1 = as.character(constitute_topic1),
+         constitute_topic1 = case_when(constitute_topic1 == NA ~ "depexec", TRUE ~ NA))
+
+  filter(x == TRUE) %>%
+  mutate(constitute_topic1 = "depexec")
+
+
+subset_df %>% write_csv("data/subset.csv")
+
+
+x <- subset_df %>% 
+  mutate(pol = str_detect(title_or_description_from_source, "(?i)electoral (?i)college")) %>% 
+  filter(pol == TRUE) %>% 
+  select(-pol) %>% 
+  mutate(constitute_topic3 = "hoselect")
+
+%>% 
+  mutate(x = is.na(constitute_topic1)) %>% 
+  filter(x == TRUE) %>%
+  
+
+
+
   
   filter(title_or_description_from_source %in% c("Providing for presidential veto of separate items in appropriation bills", "Proposing an amendment to the Constitution of the United States allowing an item veto in appropriations bills.", "Proposing an amendment to the Constitution of the United States to authorize the line item veto.", "To permit veto of items in appropriation bills", "Item veto for appropriations bills", "Item veto or reduction of appropriations bills", "Veto items in appropriation bills", "Empowers the President to veto individual items in general appropriation bills")) %>%
   mutate(constitute_topic1 = "legapp")
@@ -221,8 +249,62 @@ test_df %>% write_csv("data/master.csv")
 master_df <- read.csv("data/master.csv")
 
 
+master_df %>% 
+  drop_na(constitute_topic1)
 
+
+group_df <- master_df %>% 
+  subset(is.na(constitute_topic1)) %>% 
+  group_by(title_or_description_from_source) %>% 
+  summarize(n=n())
+
+
+```
+
+
+
+```{r}
+
+
+subset_df <- read_csv("data/master.csv") %>%
+  filter(title_or_description_from_source == "To repeal fifteenth amendment")%>% 
+  mutate(constitute_topic1 = "voteres+*",
+         constitute_topic2 = "legpow-*",
+         constitute_topic3 = "equalgr4-*",
+         constitute_topic4 = "equalgr10-*")
   
+  mutate(pol = str_detect(title_or_description_from_source, "(?i)electoral (?i)college")) %>% 
+  filter(pol == TRUE)%>% 
+  select(-pol)
+
+subset_df %>% write_csv("data/subset.csv")
+
+subset_df <- read_csv("data/subset.csv")
+
+```
+
+```{r}
+
+id_df <- subset_df %>% 
+  select(id, title_or_description_from_source)
+
+test_df <- left_join(master_df, id_df, by = "id") %>% 
+  subset(is.na(title_or_description_from_source.y)) %>% 
+  select(-title_or_description_from_source.y) %>% 
+  rename(title_or_description_from_source = title_or_description_from_source.x) %>% 
+  rbind(subset_df)
+
+test_df %>% write_csv("data/master.csv")
+
+master_df <- read.csv("data/master.csv")
+
+group_df <- master_df %>% 
+  subset(is.na(constitute_topic1)) %>% 
+  group_by(title_or_description_from_source) %>% 
+  summarize(n=n())
+
+master_df %>% 
+  drop_na(constitute_topic1)
 
 
 
