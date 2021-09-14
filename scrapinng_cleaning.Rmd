@@ -1,0 +1,69 @@
+---
+title: "Scrapping Data"
+author: "Samuel Lowry"
+date: "9/14/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+
+```{r}
+action1 <- read_csv("scraping_data/action_1_3.csv")
+action2 <- read_csv("scraping_data/action_4_6.csv")
+action3 <- read_csv("scraping_data/action_7_10.csv")
+action4 <- read_csv("scraping_data/action_12_16.csv")
+action5 <- read_csv("scraping_data/action_18_18.csv")
+action6 <- read_csv("scraping_data/action_20_21.csv")
+action7 <- read_csv("scraping_data/action_23_24.csv")
+
+action <- rbind(action1, action2, action3, action4, action5, action6, action7)
+
+write_csv(action, "combined_scraped/action.csv")
+```
+
+```{r}
+title1 <- read_csv("scraping_data/title_1_3.csv")
+title2 <- read_csv("scraping_data/title_4_6.csv")
+title3 <- read_csv("scraping_data/title_7_10.csv")
+title4 <- read_csv("scraping_data/title_12_16.csv")
+title5 <- read_csv("scraping_data/title_18_18.csv")
+title6 <- read_csv("scraping_data/title_20_21.csv")
+title7 <- read_csv("scraping_data/title_23_24.csv")
+
+title <- rbind(title1, title2, title3, title4, title5, title6, title7)
+
+write_csv(title, "combined_scraped/title.csv")
+```
+
+```{r}
+sponsor1 <- read_csv("scraping_data/sponsor_1_3.csv")
+sponsor2 <- read_csv("scraping_data/sponsor_4_6.csv")
+sponsor3 <- read_csv("scraping_data/sponsor_7_10.csv")
+sponsor4 <- read_csv("scraping_data/sponsor_12_16.csv")
+sponsor5 <- read_csv("scraping_data/sponsor_18_18.csv")
+sponsor6 <- read_csv("scraping_data/sponsor_20_21.csv")
+sponsor7 <- read_csv("scraping_data/sponsor_23_24.csv")
+
+sponsor <- rbind(sponsor1, sponsor2, sponsor3, sponsor4, sponsor5, sponsor6, sponsor7)
+
+write_csv(sponsor, "combined_scraped/sponsor.csv")
+```
+
+```{r}
+committee1 <- read_csv("scraping_data/committee_1_3.csv")
+committee2 <- read_csv("scraping_data/committee_4_6.csv")
+committee3 <- read_csv("scraping_data/committee_7_10.csv")
+committee4 <- read_csv("scraping_data/committee_12_16.csv")
+committee5 <- read_csv("scraping_data/committee_18_18.csv")
+committee6 <- read_csv("scraping_data/committee_20_21.csv")
+committee7 <- read_csv("scraping_data/committee_23_24.csv")
+
+committee <- rbind(committee1, committee2, committee3, committee4, committee5, committee6, committee7)
+
+write_csv(committee, "combined_scraped/committee.csv")
+```
+

@@ -1,0 +1,930 @@
+,Name,Party,State,Bill:,Congress-Session:,Category
+0,George William Norris,Republican Party,Nebraska,SJRes 47,70- 1,Primary
+1,Gene Eugene Green,Democratic Party,Texas,HJRes 4,110- 1,Primary
+2,William D. Delahunt,Democratic Party,Massachusetts,HJRes 4,110- 1,Cosponsor
+3,Brian N. Baird,Democratic Party,Washington,HJRes 4,110- 1,Cosponsor
+4,Gene Eugene Green,Democratic Party,Texas,HJRes 8,109- 1,Primary
+5,William D. Delahunt,Democratic Party,Massachusetts,HJRes 8,109- 1,Cosponsor
+6,Brian N. Baird,Democratic Party,Washington,HJRes 8,109- 1,Cosponsor
+7,Peter Hoekstra,Republican Party,Michigan,HJRes 104,104- 1,Primary
+8,Peter Hoekstra,Republican Party,Michigan,HJRes 70,111- 2,Primary
+9,Peter Hoekstra,Republican Party,Michigan,HJRes 85,105- 1,Primary
+10,Peter Hoekstra,Republican Party,Michigan,HJRes 181,103- 1,Primary
+11,Tim Hutchinson,Republican Party,Arkansas,HJRes 181,103- 1,Cosponsor
+12,William P. Baker,Republican Party,California,HJRes 181,103- 1,Cosponsor
+13,Howard P. McKeon,Republican Party,California,HJRes 181,103- 1,Cosponsor
+14,Edward R. Royce,Republican Party,California,HJRes 181,103- 1,Cosponsor
+15,Ken S. Calvert,Republican Party,California,HJRes 181,103- 1,Cosponsor
+16,Thomas W. Ewing,Republican Party,Illinois,HJRes 181,103- 1,Cosponsor
+17,Joseph K. Knollenberg,Republican Party,Michigan,HJRes 181,103- 1,Cosponsor
+18,Nick Smith,Republican Party,Michigan,HJRes 181,103- 1,Cosponsor
+19,L. William Paxon,Republican Party,New York,HJRes 181,103- 1,Cosponsor
+20,Jack Quinn,Republican Party,New York,HJRes 181,103- 1,Cosponsor
+21,Gerald Brooks Hunt Solomon,Republican Party,New York,HJRes 181,103- 1,Cosponsor
+22,John R. Kasich,Republican Party,Ohio,HJRes 181,103- 1,Cosponsor
+23,Ernest J. Istook Jr.,Republican Party,Oklahoma,HJRes 181,103- 1,Cosponsor
+24,Martin Nelson Johnson,Republican Party,North Dakota,HRes 16,52- 1,Primary
+25,William Steele Holman,Democratic Party,Indiana,HRes 51,53- 1,Primary
+26,Owen Scott,Democratic Party,Illinois,HRes 2,52- 1,Primary
+27,William Steele Holman,Democratic Party,Indiana,HRes 6,52- 1,Primary
+28,Henry Barbosa González,Democratic Party,Texas,HJRes 310,102- 1,Primary
+29,Martin Olav Sabo,Democratic Party,Minnesota,HJRes 101,102- 1,Primary
+30,John Jacob Rhodes III,Republican Party,Arizona,HJRes 101,102- 1,Cosponsor
+31,David Evans Skaggs,Democratic Party,Colorado,HJRes 101,102- 1,Cosponsor
+32,Christopher H. Shays,Republican Party,Connecticut,HJRes 101,102- 1,Cosponsor
+33,William O. Lipinski,Democratic Party,Illinois,HJRes 101,102- 1,Cosponsor
+34,Henry John Hyde,Republican Party,Illinois,HJRes 101,102- 1,Cosponsor
+35,Lee Herbert Hamilton,Democratic Party,Indiana,HJRes 101,102- 1,Cosponsor
+36,Robert Linligthgow Livingston Jr.,Republican Party,Louisiana,HJRes 101,102- 1,Cosponsor
+37,Steny H. Hoyer,Democratic Party,Maryland,HJRes 101,102- 1,Cosponsor
+38,Barney Frank,Democratic Party,Massachusetts,HJRes 101,102- 1,Cosponsor
+39,David E. Bonior,Democratic Party,Michigan,HJRes 101,102- 1,Cosponsor
+40,Collin Clark Peterson,Democratic Party,Minnesota,HJRes 101,102- 1,Cosponsor
+41,Michael G. Oxley,Republican Party,Ohio,HJRes 101,102- 1,Cosponsor
+42,George W. Gekas,Republican Party,Pennsylvania,HJRes 101,102- 1,Cosponsor
+43,Joseph Paul Kolter,Democratic Party,Pennsylvania,HJRes 101,102- 1,Cosponsor
+44,Charles Wilson,Democratic Party,Texas,HJRes 101,102- 1,Cosponsor
+45,Richard K. Armey,Republican Party,Texas,HJRes 101,102- 1,Cosponsor
+46,Binger Hermann,Republican Party,Oregon,HRes 20,52- 1,Primary
+47,Henry Barbosa González,Democratic Party,Texas,HJRes 73,101- 1,Primary
+48,Martin Nelson Johnson,Republican Party,North Dakota,HRes 90,53- 2,Primary
+49,Newton Crain Blanchard,Democratic Party,Louisiana,HRes 7,52- 1,Primary
+50,John Dalzell,Republican Party,Pennsylvania,HRes 21,52- 1,Primary
+51,Henry Barbosa González,Democratic Party,Texas,HJRes 307,103- 2,Primary
+52,Steny H. Hoyer,Democratic Party,Maryland,HJRes 24,109- 1,Primary
+53,Howard L. Berman,Democratic Party,California,HJRes 24,109- 1,Cosponsor
+54,Martin Olav Sabo,Democratic Party,Minnesota,HJRes 24,109- 1,Cosponsor
+55,Frank J. Pallone Jr.,Democratic Party,New Jersey,HJRes 24,109- 1,Cosponsor
+56,F. James Sensenbrenner Jr.,Republican Party,Wisconsin,HJRes 24,109- 1,Cosponsor
+57,Steny H. Hoyer,Democratic Party,Maryland,HJRes 39,107- 1,Primary
+58,Howard L. Berman,Democratic Party,California,HJRes 39,107- 1,Cosponsor
+59,Henry John Hyde,Republican Party,Illinois,HJRes 39,107- 1,Cosponsor
+60,Barney Frank,Democratic Party,Massachusetts,HJRes 39,107- 1,Cosponsor
+61,Martin Olav Sabo,Democratic Party,Minnesota,HJRes 39,107- 1,Cosponsor
+62,Frank J. Pallone Jr.,Democratic Party,New Jersey,HJRes 39,107- 1,Cosponsor
+63,F. James Sensenbrenner Jr.,Republican Party,Wisconsin,HJRes 39,107- 1,Cosponsor
+64,Steny H. Hoyer,Democratic Party,Maryland,HJRes 25,108- 1,Primary
+65,Howard L. Berman,Democratic Party,California,HJRes 25,108- 1,Cosponsor
+66,Alcee L. Hastings,Democratic Party,Florida,HJRes 25,108- 1,Cosponsor
+67,Henry John Hyde,Republican Party,Illinois,HJRes 25,108- 1,Cosponsor
+68,Barney Frank,Democratic Party,Massachusetts,HJRes 25,108- 1,Cosponsor
+69,Martin Olav Sabo,Democratic Party,Minnesota,HJRes 25,108- 1,Cosponsor
+70,Frank J. Pallone Jr.,Democratic Party,New Jersey,HJRes 25,108- 1,Cosponsor
+71,F. James Sensenbrenner Jr.,Republican Party,Wisconsin,HJRes 25,108- 1,Cosponsor
+72,Major R. Owens,Democratic Party,New York,HJRes 81,103- 1,Primary
+73,Michael R. Turner,Republican Party,Ohio,HJRes 22,112- 1,Primary
+74,Mike Rogers,Republican Party,Alabama,HJRes 22,112- 1,Cosponsor
+75,Spencer Thomas Bachus III,Republican Party,Alabama,HJRes 22,112- 1,Cosponsor
+76,Jo Bonner,Republican Party,Alabama,HJRes 22,112- 1,Cosponsor
+77,Mike Rogers,Republican Party,Alabama,HJRes 22,112- 1,Cosponsor
+78,Spencer Thomas Bachus III,Republican Party,Alabama,HJRes 22,112- 1,Cosponsor
+79,Jo Bonner,Republican Party,Alabama,HJRes 22,112- 1,Cosponsor
+80,Don E. Young,Republican Party,Alaska,HJRes 22,112- 1,Cosponsor
+81,Don E. Young,Republican Party,Alaska,HJRes 22,112- 1,Cosponsor
+82,Jeff Flake,Republican Party,Arizona,HJRes 22,112- 1,Cosponsor
+83,Trent Franks,Republican Party,Arizona,HJRes 22,112- 1,Cosponsor
+84,Jeff Flake,Republican Party,Arizona,HJRes 22,112- 1,Cosponsor
+85,Trent Franks,Republican Party,Arizona,HJRes 22,112- 1,Cosponsor
+86,Tom McClintock,Republican Party,California,HJRes 22,112- 1,Cosponsor
+87,Howard P. McKeon,Republican Party,California,HJRes 22,112- 1,Cosponsor
+88,Gary G. Miller,Republican Party,California,HJRes 22,112- 1,Cosponsor
+89,Devin G. Nunes,Republican Party,California,HJRes 22,112- 1,Cosponsor
+90,Jerry Lewis,Republican Party,California,HJRes 22,112- 1,Cosponsor
+91,Ken S. Calvert,Republican Party,California,HJRes 22,112- 1,Cosponsor
+92,Brian P. Bilbray,Republican Party,California,HJRes 22,112- 1,Cosponsor
+93,Walter Herger,Republican Party,California,HJRes 22,112- 1,Cosponsor
+94,Duncan D. Hunter,Republican Party,California,HJRes 22,112- 1,Cosponsor
+95,Elton W. Gallegly,Republican Party,California,HJRes 22,112- 1,Cosponsor
+96,Howard P. McKeon,Republican Party,California,HJRes 22,112- 1,Cosponsor
+97,Tom McClintock,Republican Party,California,HJRes 22,112- 1,Cosponsor
+98,Gary G. Miller,Republican Party,California,HJRes 22,112- 1,Cosponsor
+99,Devin G. Nunes,Republican Party,California,HJRes 22,112- 1,Cosponsor
+100,Jerry Lewis,Republican Party,California,HJRes 22,112- 1,Cosponsor
+101,Ken S. Calvert,Republican Party,California,HJRes 22,112- 1,Cosponsor
+102,Brian P. Bilbray,Republican Party,California,HJRes 22,112- 1,Cosponsor
+103,Walter Herger,Republican Party,California,HJRes 22,112- 1,Cosponsor
+104,Duncan D. Hunter,Republican Party,California,HJRes 22,112- 1,Cosponsor
+105,Elton W. Gallegly,Republican Party,California,HJRes 22,112- 1,Cosponsor
+106,Doug Lamborn,Republican Party,Colorado,HJRes 22,112- 1,Cosponsor
+107,Mike Coffman,Republican Party,Colorado,HJRes 22,112- 1,Cosponsor
+108,Doug Lamborn,Republican Party,Colorado,HJRes 22,112- 1,Cosponsor
+109,Mike Coffman,Republican Party,Colorado,HJRes 22,112- 1,Cosponsor
+110,John L. Mica,Republican Party,Florida,HJRes 22,112- 1,Cosponsor
+111,Jeff Miller,Republican Party,Florida,HJRes 22,112- 1,Cosponsor
+112,Clifford B. Stearns,Republican Party,Florida,HJRes 22,112- 1,Cosponsor
+113,C. W. Bill Young,Republican Party,Florida,HJRes 22,112- 1,Cosponsor
+114,Dennis A. Ross,Republican Party,Florida,HJRes 22,112- 1,Cosponsor
+115,Bill Posey,Republican Party,Florida,HJRes 22,112- 1,Cosponsor
+116,Mario Diaz-Balart,Republican Party,Florida,HJRes 22,112- 1,Cosponsor
+117,John L. Mica,Republican Party,Florida,HJRes 22,112- 1,Cosponsor
+118,Jeff Miller,Republican Party,Florida,HJRes 22,112- 1,Cosponsor
+119,Clifford B. Stearns,Republican Party,Florida,HJRes 22,112- 1,Cosponsor
+120,C. W. Bill Young,Republican Party,Florida,HJRes 22,112- 1,Cosponsor
+121,Dennis A. Ross,Republican Party,Florida,HJRes 22,112- 1,Cosponsor
+122,Bill Posey,Republican Party,Florida,HJRes 22,112- 1,Cosponsor
+123,Mario Diaz-Balart,Republican Party,Florida,HJRes 22,112- 1,Cosponsor
+124,Jack Kingston,Republican Party,Georgia,HJRes 22,112- 1,Cosponsor
+125,Lynn A. Westmoreland,Republican Party,Georgia,HJRes 22,112- 1,Cosponsor
+126,Tom Price,Republican Party,Georgia,HJRes 22,112- 1,Cosponsor
+127,Paul C. Broun Jr.,Republican Party,Georgia,HJRes 22,112- 1,Cosponsor
+128,Phil Gingrey,Republican Party,Georgia,HJRes 22,112- 1,Cosponsor
+129,Jack Kingston,Republican Party,Georgia,HJRes 22,112- 1,Cosponsor
+130,Lynn A. Westmoreland,Republican Party,Georgia,HJRes 22,112- 1,Cosponsor
+131,Tom Price,Republican Party,Georgia,HJRes 22,112- 1,Cosponsor
+132,Paul C. Broun Jr.,Republican Party,Georgia,HJRes 22,112- 1,Cosponsor
+133,Phil Gingrey,Republican Party,Georgia,HJRes 22,112- 1,Cosponsor
+134,Donald A. Manzullo,Republican Party,Illinois,HJRes 22,112- 1,Cosponsor
+135,John M. Shimkus,Republican Party,Illinois,HJRes 22,112- 1,Cosponsor
+136,Timothy V. Johnson,Republican Party,Illinois,HJRes 22,112- 1,Cosponsor
+137,Donald A. Manzullo,Republican Party,Illinois,HJRes 22,112- 1,Cosponsor
+138,John M. Shimkus,Republican Party,Illinois,HJRes 22,112- 1,Cosponsor
+139,Timothy V. Johnson,Republican Party,Illinois,HJRes 22,112- 1,Cosponsor
+140,Mike Pence,Republican Party,Indiana,HJRes 22,112- 1,Cosponsor
+141,Dan L. Burton,Republican Party,Indiana,HJRes 22,112- 1,Cosponsor
+142,Mike Pence,Republican Party,Indiana,HJRes 22,112- 1,Cosponsor
+143,Dan L. Burton,Republican Party,Indiana,HJRes 22,112- 1,Cosponsor
+144,Steve A. King,Republican Party,Iowa,HJRes 22,112- 1,Cosponsor
+145,Steve A. King,Republican Party,Iowa,HJRes 22,112- 1,Cosponsor
+146,Harold Rogers,Republican Party,Kentucky,HJRes 22,112- 1,Cosponsor
+147,Geoff Davis,Republican Party,Kentucky,HJRes 22,112- 1,Cosponsor
+148,Harold Rogers,Republican Party,Kentucky,HJRes 22,112- 1,Cosponsor
+149,Geoff Davis,Republican Party,Kentucky,HJRes 22,112- 1,Cosponsor
+150,Charles W. Boustany Jr.,Republican Party,Louisiana,HJRes 22,112- 1,Cosponsor
+151,Rodney M. Alexander,Republican Party,Louisiana,HJRes 22,112- 1,Cosponsor
+152,John Fleming,Republican Party,Louisiana,HJRes 22,112- 1,Cosponsor
+153,Charles W. Boustany Jr.,Republican Party,Louisiana,HJRes 22,112- 1,Cosponsor
+154,Rodney M. Alexander,Republican Party,Louisiana,HJRes 22,112- 1,Cosponsor
+155,John Fleming,Republican Party,Louisiana,HJRes 22,112- 1,Cosponsor
+156,Roscoe G. Bartlett,Republican Party,Maryland,HJRes 22,112- 1,Cosponsor
+157,Roscoe G. Bartlett,Republican Party,Maryland,HJRes 22,112- 1,Cosponsor
+158,Dave Lee Camp,Republican Party,Michigan,HJRes 22,112- 1,Cosponsor
+159,Dave Lee Camp,Republican Party,Michigan,HJRes 22,112- 1,Cosponsor
+160,John Paul Kline,Republican Party,Minnesota,HJRes 22,112- 1,Cosponsor
+161,Michele Marie Bachmann,Republican Party,Minnesota,HJRes 22,112- 1,Cosponsor
+162,John Paul Kline,Republican Party,Minnesota,HJRes 22,112- 1,Cosponsor
+163,Michele Marie Bachmann,Republican Party,Minnesota,HJRes 22,112- 1,Cosponsor
+164,Blaine Luetkemeyer,Republican Party,Missouri,HJRes 22,112- 1,Cosponsor
+165,Billy Long,Republican Party,Missouri,HJRes 22,112- 1,Cosponsor
+166,W. Todd Akin,Republican Party,Missouri,HJRes 22,112- 1,Cosponsor
+167,Sam B. Graves,Republican Party,Missouri,HJRes 22,112- 1,Cosponsor
+168,Blaine Luetkemeyer,Republican Party,Missouri,HJRes 22,112- 1,Cosponsor
+169,Billy Long,Republican Party,Missouri,HJRes 22,112- 1,Cosponsor
+170,W. Todd Akin,Republican Party,Missouri,HJRes 22,112- 1,Cosponsor
+171,Sam B. Graves,Republican Party,Missouri,HJRes 22,112- 1,Cosponsor
+172,Dennis Rehberg,Republican Party,Montana,HJRes 22,112- 1,Cosponsor
+173,Dennis Rehberg,Republican Party,Montana,HJRes 22,112- 1,Cosponsor
+174,Lee R. Terry,Republican Party,Nebraska,HJRes 22,112- 1,Cosponsor
+175,Lee R. Terry,Republican Party,Nebraska,HJRes 22,112- 1,Cosponsor
+176,Dean Heller,Republican Party,Nevada,HJRes 22,112- 1,Cosponsor
+177,Dean Heller,Republican Party,Nevada,HJRes 22,112- 1,Cosponsor
+178,Leonard Lance,Republican Party,New Jersey,HJRes 22,112- 1,Cosponsor
+179,Scott Garrett,Republican Party,New Jersey,HJRes 22,112- 1,Cosponsor
+180,Leonard Lance,Republican Party,New Jersey,HJRes 22,112- 1,Cosponsor
+181,Scott Garrett,Republican Party,New Jersey,HJRes 22,112- 1,Cosponsor
+182,Christopher John Lee,Republican Party,New York,HJRes 22,112- 1,Cosponsor
+183,Peter T. King,Republican Party,New York,HJRes 22,112- 1,Cosponsor
+184,Christopher John Lee,Republican Party,New York,HJRes 22,112- 1,Cosponsor
+185,Peter T. King,Republican Party,New York,HJRes 22,112- 1,Cosponsor
+186,Sue W. Myrick,Republican Party,North Carolina,HJRes 22,112- 1,Cosponsor
+187,Howard Coble,Republican Party,North Carolina,HJRes 22,112- 1,Cosponsor
+188,Walter B. Jones Jr.,Republican Party,North Carolina,HJRes 22,112- 1,Cosponsor
+189,Sue W. Myrick,Republican Party,North Carolina,HJRes 22,112- 1,Cosponsor
+190,Howard Coble,Republican Party,North Carolina,HJRes 22,112- 1,Cosponsor
+191,Walter B. Jones Jr.,Republican Party,North Carolina,HJRes 22,112- 1,Cosponsor
+192,Steven C. LaTourette,Republican Party,Ohio,HJRes 22,112- 1,Cosponsor
+193,Robert E. Latta,Republican Party,Ohio,HJRes 22,112- 1,Cosponsor
+194,Patrick J. Tiberi,Republican Party,Ohio,HJRes 22,112- 1,Cosponsor
+195,Jean Schmidt,Republican Party,Ohio,HJRes 22,112- 1,Cosponsor
+196,Steve Austria,Republican Party,Ohio,HJRes 22,112- 1,Cosponsor
+197,John A. Boehner,Republican Party,Ohio,HJRes 22,112- 1,Cosponsor
+198,Bob Gibbs,Republican Party,Ohio,HJRes 22,112- 1,Cosponsor
+199,Steven C. LaTourette,Republican Party,Ohio,HJRes 22,112- 1,Cosponsor
+200,Robert E. Latta,Republican Party,Ohio,HJRes 22,112- 1,Cosponsor
+201,Patrick J. Tiberi,Republican Party,Ohio,HJRes 22,112- 1,Cosponsor
+202,Jean Schmidt,Republican Party,Ohio,HJRes 22,112- 1,Cosponsor
+203,Steve Austria,Republican Party,Ohio,HJRes 22,112- 1,Cosponsor
+204,John A. Boehner,Republican Party,Ohio,HJRes 22,112- 1,Cosponsor
+205,Bob Gibbs,Republican Party,Ohio,HJRes 22,112- 1,Cosponsor
+206,Frank D. Lucas,Republican Party,Oklahoma,HJRes 22,112- 1,Cosponsor
+207,Frank D. Lucas,Republican Party,Oklahoma,HJRes 22,112- 1,Cosponsor
+208,Greg P. Walden,Republican Party,Oregon,HJRes 22,112- 1,Cosponsor
+209,Greg P. Walden,Republican Party,Oregon,HJRes 22,112- 1,Cosponsor
+210,Bill Shuster,Republican Party,Pennsylvania,HJRes 22,112- 1,Cosponsor
+211,Joseph R. Pitts,Republican Party,Pennsylvania,HJRes 22,112- 1,Cosponsor
+212,Todd R. Platts,Republican Party,Pennsylvania,HJRes 22,112- 1,Cosponsor
+213,Bill Shuster,Republican Party,Pennsylvania,HJRes 22,112- 1,Cosponsor
+214,Joseph R. Pitts,Republican Party,Pennsylvania,HJRes 22,112- 1,Cosponsor
+215,Todd R. Platts,Republican Party,Pennsylvania,HJRes 22,112- 1,Cosponsor
+216,Joe G. Wilson,Republican Party,South Carolina,HJRes 22,112- 1,Cosponsor
+217,Jeff Duncan,Republican Party,South Carolina,HJRes 22,112- 1,Cosponsor
+218,Joe G. Wilson,Republican Party,South Carolina,HJRes 22,112- 1,Cosponsor
+219,Jeff Duncan,Republican Party,South Carolina,HJRes 22,112- 1,Cosponsor
+220,David P. Roe,Republican Party,Tennessee,HJRes 22,112- 1,Cosponsor
+221,Marsha W. Blackburn,Republican Party,Tennessee,HJRes 22,112- 1,Cosponsor
+222,John J. Duncan Jr.,Republican Party,Tennessee,HJRes 22,112- 1,Cosponsor
+223,David P. Roe,Republican Party,Tennessee,HJRes 22,112- 1,Cosponsor
+224,Marsha W. Blackburn,Republican Party,Tennessee,HJRes 22,112- 1,Cosponsor
+225,John J. Duncan Jr.,Republican Party,Tennessee,HJRes 22,112- 1,Cosponsor
+226,Kenny Ewell Marchant,Republican Party,Texas,HJRes 22,112- 1,Cosponsor
+227,Michael T. McCaul,Republican Party,Texas,HJRes 22,112- 1,Cosponsor
+228,Randy Neugebauer,Republican Party,Texas,HJRes 22,112- 1,Cosponsor
+229,Pete Olson,Republican Party,Texas,HJRes 22,112- 1,Cosponsor
+230,Pete A. Sessions,Republican Party,Texas,HJRes 22,112- 1,Cosponsor
+231,Ted Poe,Republican Party,Texas,HJRes 22,112- 1,Cosponsor
+232,Michael C. Burgess,Republican Party,Texas,HJRes 22,112- 1,Cosponsor
+233,John R. Carter,Republican Party,Texas,HJRes 22,112- 1,Cosponsor
+234,John Abney Culberson,Republican Party,Texas,HJRes 22,112- 1,Cosponsor
+235,Ralph M. Hall,Republican Party,Texas,HJRes 22,112- 1,Cosponsor
+236,Jeb Hensarling,Republican Party,Texas,HJRes 22,112- 1,Cosponsor
+237,Sam Robert Johnson,Republican Party,Texas,HJRes 22,112- 1,Cosponsor
+238,Kay Granger,Republican Party,Texas,HJRes 22,112- 1,Cosponsor
+239,Louie B. Gohmert Jr.,Republican Party,Texas,HJRes 22,112- 1,Cosponsor
+240,Michael T. McCaul,Republican Party,Texas,HJRes 22,112- 1,Cosponsor
+241,Kenny Ewell Marchant,Republican Party,Texas,HJRes 22,112- 1,Cosponsor
+242,Randy Neugebauer,Republican Party,Texas,HJRes 22,112- 1,Cosponsor
+243,Pete Olson,Republican Party,Texas,HJRes 22,112- 1,Cosponsor
+244,Pete A. Sessions,Republican Party,Texas,HJRes 22,112- 1,Cosponsor
+245,Ted Poe,Republican Party,Texas,HJRes 22,112- 1,Cosponsor
+246,Michael C. Burgess,Republican Party,Texas,HJRes 22,112- 1,Cosponsor
+247,John R. Carter,Republican Party,Texas,HJRes 22,112- 1,Cosponsor
+248,John Abney Culberson,Republican Party,Texas,HJRes 22,112- 1,Cosponsor
+249,Kay Granger,Republican Party,Texas,HJRes 22,112- 1,Cosponsor
+250,Ralph M. Hall,Republican Party,Texas,HJRes 22,112- 1,Cosponsor
+251,Jeb Hensarling,Republican Party,Texas,HJRes 22,112- 1,Cosponsor
+252,Sam Robert Johnson,Republican Party,Texas,HJRes 22,112- 1,Cosponsor
+253,Louie B. Gohmert Jr.,Republican Party,Texas,HJRes 22,112- 1,Cosponsor
+254,Rob Bishop,Republican Party,Utah,HJRes 22,112- 1,Cosponsor
+255,Rob Bishop,Republican Party,Utah,HJRes 22,112- 1,Cosponsor
+256,Eric I. Cantor,Republican Party,Virginia,HJRes 22,112- 1,Cosponsor
+257,Bob W. Goodlatte,Republican Party,Virginia,HJRes 22,112- 1,Cosponsor
+258,J. Randy Forbes,Republican Party,Virginia,HJRes 22,112- 1,Cosponsor
+259,Eric I. Cantor,Republican Party,Virginia,HJRes 22,112- 1,Cosponsor
+260,Bob W. Goodlatte,Republican Party,Virginia,HJRes 22,112- 1,Cosponsor
+261,J. Randy Forbes,Republican Party,Virginia,HJRes 22,112- 1,Cosponsor
+262,David G. Reichert,Republican Party,Washington,HJRes 22,112- 1,Cosponsor
+263,David G. Reichert,Republican Party,Washington,HJRes 22,112- 1,Cosponsor
+264,Shelley Moore Capito,Republican Party,West Virginia,HJRes 22,112- 1,Cosponsor
+265,Shelley Moore Capito,Republican Party,West Virginia,HJRes 22,112- 1,Cosponsor
+266,Herbert Romulus O’Conor,Democratic Party,Maryland,SJRes 3,82- 1,Primary
+267,Richard M. Nolan,Democratic Party,Minnesota,HJRes 48,115- 1,Primary
+268,Raúl M. Grijalva,Democratic Party,Arizona,HJRes 48,115- 1,Cosponsor
+269,Ro Khanna,Democratic Party,California,HJRes 48,115- 1,Cosponsor
+270,Ted Lieu,Democratic Party,California,HJRes 48,115- 1,Cosponsor
+271,Barbara Lee,Democratic Party,California,HJRes 48,115- 1,Cosponsor
+272,Mark Takano,Democratic Party,California,HJRes 48,115- 1,Cosponsor
+273,Jared Huffman,Democratic Party,California,HJRes 48,115- 1,Cosponsor
+274,Jackie Speier,Democratic Party,California,HJRes 48,115- 1,Cosponsor
+275,Karen Bass,Democratic Party,California,HJRes 48,115- 1,Cosponsor
+276,Mark DeSaulnier,Democratic Party,California,HJRes 48,115- 1,Cosponsor
+277,Maxine Waters,Democratic Party,California,HJRes 48,115- 1,Cosponsor
+278,Judy M. Chu,Democratic Party,California,HJRes 48,115- 1,Cosponsor
+279,Lucille Roybal-Allard,Democratic Party,California,HJRes 48,115- 1,Cosponsor
+280,Doris O. Matsui,Democratic Party,California,HJRes 48,115- 1,Cosponsor
+281,Alan S. Lowenthal,Democratic Party,California,HJRes 48,115- 1,Cosponsor
+282,Nanette Barragán,Democratic Party,California,HJRes 48,115- 1,Cosponsor
+283,Ed Perlmutter,Democratic Party,Colorado,HJRes 48,115- 1,Cosponsor
+284,Jared Polis,Democratic Party,Colorado,HJRes 48,115- 1,Cosponsor
+285,Elizabeth H. Esty,Democratic Party,Connecticut,HJRes 48,115- 1,Cosponsor
+286,Al Lawson,Democratic Party,Florida,HJRes 48,115- 1,Cosponsor
+287,Tulsi Gabbard,Democratic Party,Hawaii,HJRes 48,115- 1,Cosponsor
+288,Danny K. Davis,Democratic Party,Illinois,HJRes 48,115- 1,Cosponsor
+289,Janice D. Schakowsky,Democratic Party,Illinois,HJRes 48,115- 1,Cosponsor
+290,André Carson,Democratic Party,Indiana,HJRes 48,115- 1,Cosponsor
+291,Chellie Pingree,Democratic Party,Maine,HJRes 48,115- 1,Cosponsor
+292,Jamie Raskin,Democratic Party,Maryland,HJRes 48,115- 1,Cosponsor
+293,Elijah E. Cummings,Democratic Party,Maryland,HJRes 48,115- 1,Cosponsor
+294,Michael E. Capuano,Democratic Party,Massachusetts,HJRes 48,115- 1,Cosponsor
+295,Seth Moulton,Democratic Party,Massachusetts,HJRes 48,115- 1,Cosponsor
+296,James P. McGovern,Democratic Party,Massachusetts,HJRes 48,115- 1,Cosponsor
+297,Joseph P. Kennedy III,Democratic Party,Massachusetts,HJRes 48,115- 1,Cosponsor
+298,Niki S. Tsongas,Democratic Party,Massachusetts,HJRes 48,115- 1,Cosponsor
+299,Katherine M. Clark,Democratic Party,Massachusetts,HJRes 48,115- 1,Cosponsor
+300,William R. Keating,Democratic Party,Massachusetts,HJRes 48,115- 1,Cosponsor
+301,John Conyers Jr.,Democratic Party,Michigan,HJRes 48,115- 1,Cosponsor
+302,Betty Louise McCollum,Democratic Party,Minnesota,HJRes 48,115- 1,Cosponsor
+303,Keith Maurice Ellison,Democratic Party,Minnesota,HJRes 48,115- 1,Cosponsor
+304,Timothy James Walz,Democratic Party,Minnesota,HJRes 48,115- 1,Cosponsor
+305,Donald W. Norcross,Democratic Party,New Jersey,HJRes 48,115- 1,Cosponsor
+306,Eliot L. Engel,Democratic Party,New York,HJRes 48,115- 1,Cosponsor
+307,Paul Tonko,Democratic Party,New York,HJRes 48,115- 1,Cosponsor
+308,Louise McIntosh Slaughter,Democratic Party,New York,HJRes 48,115- 1,Cosponsor
+309,José E. Serrano,Democratic Party,New York,HJRes 48,115- 1,Cosponsor
+310,Walter B. Jones Jr.,Republican Party,North Carolina,HJRes 48,115- 1,Cosponsor
+311,Alma Adams,Democratic Party,North Carolina,HJRes 48,115- 1,Cosponsor
+312,Marcia L. Fudge,Democratic Party,Ohio,HJRes 48,115- 1,Cosponsor
+313,Marcy Kaptur,Democratic Party,Ohio,HJRes 48,115- 1,Cosponsor
+314,Tim J. Ryan,Democratic Party,Ohio,HJRes 48,115- 1,Cosponsor
+315,Earl Blumenauer,Democratic Party,Oregon,HJRes 48,115- 1,Cosponsor
+316,Peter A. DeFazio,Democratic Party,Oregon,HJRes 48,115- 1,Cosponsor
+317,Suzanne Bonamici,Democratic Party,Oregon,HJRes 48,115- 1,Cosponsor
+318,Matthew A. Cartwright,Democratic Party,Pennsylvania,HJRes 48,115- 1,Cosponsor
+319,Beto O’Rourke,Democratic Party,Texas,HJRes 48,115- 1,Cosponsor
+320,Sheila Jackson Lee,Democratic Party,Texas,HJRes 48,115- 1,Cosponsor
+321,Peter Welch,Democratic Party,Vermont,HJRes 48,115- 1,Cosponsor
+322,Donald Beyer,Democratic Party,Virginia,HJRes 48,115- 1,Cosponsor
+323,Derek Kilmer,Democratic Party,Washington,HJRes 48,115- 1,Cosponsor
+324,Pramila Jayapal,Democratic Party,Washington,HJRes 48,115- 1,Cosponsor
+325,Suzan K. DelBene,Democratic Party,Washington,HJRes 48,115- 1,Cosponsor
+326,Adam Smith,Democratic Party,Washington,HJRes 48,115- 1,Cosponsor
+327,Denny Heck,Democratic Party,Washington,HJRes 48,115- 1,Cosponsor
+328,Mark Pocan,Democratic Party,Wisconsin,HJRes 48,115- 1,Cosponsor
+329,Ron James Kind,Democratic Party,Wisconsin,HJRes 48,115- 1,Cosponsor
+330,Gwen Moore,Democratic Party,Wisconsin,HJRes 48,115- 1,Cosponsor
+331,Eleanor Holmes Norton,Democratic Party,the District of Columbia,HJRes 48,115- 1,Cosponsor
+332,Richard M. Nolan,Democratic Party,Minnesota,HJRes 48,114- 1,Primary
+333,Raúl M. Grijalva,Democratic Party,Arizona,HJRes 48,114- 1,Cosponsor
+334,Jared Huffman,Democratic Party,California,HJRes 48,114- 1,Cosponsor
+335,Mark Takano,Democratic Party,California,HJRes 48,114- 1,Cosponsor
+336,Barbara Lee,Democratic Party,California,HJRes 48,114- 1,Cosponsor
+337,Mark DeSaulnier,Democratic Party,California,HJRes 48,114- 1,Cosponsor
+338,Ted Lieu,Democratic Party,California,HJRes 48,114- 1,Cosponsor
+339,Judy M. Chu,Democratic Party,California,HJRes 48,114- 1,Cosponsor
+340,Ed Perlmutter,Democratic Party,Colorado,HJRes 48,114- 1,Cosponsor
+341,Tulsi Gabbard,Democratic Party,Hawaii,HJRes 48,114- 1,Cosponsor
+342,Danny K. Davis,Democratic Party,Illinois,HJRes 48,114- 1,Cosponsor
+343,Michael E. Capuano,Democratic Party,Massachusetts,HJRes 48,114- 1,Cosponsor
+344,John Conyers Jr.,Democratic Party,Michigan,HJRes 48,114- 1,Cosponsor
+345,Keith Maurice Ellison,Democratic Party,Minnesota,HJRes 48,114- 1,Cosponsor
+346,Betty Louise McCollum,Democratic Party,Minnesota,HJRes 48,114- 1,Cosponsor
+347,Louise McIntosh Slaughter,Democratic Party,New York,HJRes 48,114- 1,Cosponsor
+348,Walter B. Jones Jr.,Republican Party,North Carolina,HJRes 48,114- 1,Cosponsor
+349,Marcy Kaptur,Democratic Party,Ohio,HJRes 48,114- 1,Cosponsor
+350,Earl Blumenauer,Democratic Party,Oregon,HJRes 48,114- 1,Cosponsor
+351,Peter A. DeFazio,Democratic Party,Oregon,HJRes 48,114- 1,Cosponsor
+352,Matthew A. Cartwright,Democratic Party,Pennsylvania,HJRes 48,114- 1,Cosponsor
+353,Beto O’Rourke,Democratic Party,Texas,HJRes 48,114- 1,Cosponsor
+354,Jim A. McDermott,Democratic Party,Washington,HJRes 48,114- 1,Cosponsor
+355,Mark Pocan,Democratic Party,Wisconsin,HJRes 48,114- 1,Cosponsor
+356,Joseph Little Bristow,Republican Party,Kansas,SJRes 50,61- 2,Primary
+357,Pramila Jayapal,Democratic Party,Washington,HJRes 48,117- 1,Primary
+358,Raúl M. Grijalva,Democratic Party,Arizona,HJRes 48,117- 1,Cosponsor
+359,Linda T. Sánchez,Democratic Party,California,HJRes 48,117- 1,Cosponsor
+360,Jackie Speier,Democratic Party,California,HJRes 48,117- 1,Cosponsor
+361,Mark Takano,Democratic Party,California,HJRes 48,117- 1,Cosponsor
+362,Mike Michael Thompson,Democratic Party,California,HJRes 48,117- 1,Cosponsor
+363,Doris O. Matsui,Democratic Party,California,HJRes 48,117- 1,Cosponsor
+364,Grace F. Napolitano,Democratic Party,California,HJRes 48,117- 1,Cosponsor
+365,Judy M. Chu,Democratic Party,California,HJRes 48,117- 1,Cosponsor
+366,Salud O. Carbajal,Democratic Party,California,HJRes 48,117- 1,Cosponsor
+367,Nanette Diaz Barragán,Democratic Party,California,HJRes 48,117- 1,Cosponsor
+368,Anna G. Eshoo,Democratic Party,California,HJRes 48,117- 1,Cosponsor
+369,Jerry McNerney,Democratic Party,California,HJRes 48,117- 1,Cosponsor
+370,Barbara Lee,Democratic Party,California,HJRes 48,117- 1,Cosponsor
+371,Ro Khanna,Democratic Party,California,HJRes 48,117- 1,Cosponsor
+372,Jared Huffman,Democratic Party,California,HJRes 48,117- 1,Cosponsor
+373,Mark DeSaulnier,Democratic Party,California,HJRes 48,117- 1,Cosponsor
+374,Zoe Lofgren,Democratic Party,California,HJRes 48,117- 1,Cosponsor
+375,Juan Vargas,Democratic Party,California,HJRes 48,117- 1,Cosponsor
+376,Eric Swalwell,Democratic Party,California,HJRes 48,117- 1,Cosponsor
+377,Karen Bass,Democratic Party,California,HJRes 48,117- 1,Cosponsor
+378,Ed Perlmutter,Democratic Party,Colorado,HJRes 48,117- 1,Cosponsor
+379,Joe Neguse,Democratic Party,Colorado,HJRes 48,117- 1,Cosponsor
+380,Henry C. Johnson Jr.,Democratic Party,Georgia,HJRes 48,117- 1,Cosponsor
+381,Janice D. Schakowsky,Democratic Party,Illinois,HJRes 48,117- 1,Cosponsor
+382,Marie Newman,Democratic Party,Illinois,HJRes 48,117- 1,Cosponsor
+383,Jesús G. García,Democratic Party,Illinois,HJRes 48,117- 1,Cosponsor
+384,Danny K. Davis,Democratic Party,Illinois,HJRes 48,117- 1,Cosponsor
+385,Chellie Pingree,Democratic Party,Maine,HJRes 48,117- 1,Cosponsor
+386,Jamie Raskin,Democratic Party,Maryland,HJRes 48,117- 1,Cosponsor
+387,Ayanna Pressley,Democratic Party,Massachusetts,HJRes 48,117- 1,Cosponsor
+388,Lori Trahan,Democratic Party,Massachusetts,HJRes 48,117- 1,Cosponsor
+389,Seth Moulton,Democratic Party,Massachusetts,HJRes 48,117- 1,Cosponsor
+390,James P. McGovern,Democratic Party,Massachusetts,HJRes 48,117- 1,Cosponsor
+391,Stephen F. Lynch,Democratic Party,Massachusetts,HJRes 48,117- 1,Cosponsor
+392,William R. Keating,Democratic Party,Massachusetts,HJRes 48,117- 1,Cosponsor
+393,Rashida Tlaib,Democratic Party,Michigan,HJRes 48,117- 1,Cosponsor
+394,Dean Phillips,Democratic Party,Minnesota,HJRes 48,117- 1,Cosponsor
+395,Ilhan Omar,Democratic Party,Minnesota,HJRes 48,117- 1,Cosponsor
+396,Angie Craig,Democratic Party,Minnesota,HJRes 48,117- 1,Cosponsor
+397,Betty Louise McCollum,Democratic Party,Minnesota,HJRes 48,117- 1,Cosponsor
+398,Cori Bush,Democratic Party,Missouri,HJRes 48,117- 1,Cosponsor
+399,Ann M. Kuster,Democratic Party,New Hampshire,HJRes 48,117- 1,Cosponsor
+400,Teresa Leger Fernandez,Democratic Party,New Mexico,HJRes 48,117- 1,Cosponsor
+401,Adriano Espaillat,Democratic Party,New York,HJRes 48,117- 1,Cosponsor
+402,Paul Tonko,Democratic Party,New York,HJRes 48,117- 1,Cosponsor
+403,Brian M. Higgins,Democratic Party,New York,HJRes 48,117- 1,Cosponsor
+404,Jerrold L. Nadler,Democratic Party,New York,HJRes 48,117- 1,Cosponsor
+405,Alexandria Ocasio-Cortez,Democratic Party,New York,HJRes 48,117- 1,Cosponsor
+406,Kathy Ellen Manning,Democratic Party,North Carolina,HJRes 48,117- 1,Cosponsor
+407,Tim J. Ryan,Democratic Party,Ohio,HJRes 48,117- 1,Cosponsor
+408,Marcy Kaptur,Democratic Party,Ohio,HJRes 48,117- 1,Cosponsor
+409,Peter A. DeFazio,Democratic Party,Oregon,HJRes 48,117- 1,Cosponsor
+410,Suzanne Bonamici,Democratic Party,Oregon,HJRes 48,117- 1,Cosponsor
+411,Earl Blumenauer,Democratic Party,Oregon,HJRes 48,117- 1,Cosponsor
+412,Matthew A. Cartwright,Democratic Party,Pennsylvania,HJRes 48,117- 1,Cosponsor
+413,Brendan F. Boyle,Democratic Party,Pennsylvania,HJRes 48,117- 1,Cosponsor
+414,Dwight Evans,Democratic Party,Pennsylvania,HJRes 48,117- 1,Cosponsor
+415,David N. Cicilline,Democratic Party,Rhode Island,HJRes 48,117- 1,Cosponsor
+416,Lloyd A. Doggett,Democratic Party,Texas,HJRes 48,117- 1,Cosponsor
+417,Filemon Vela,Democratic Party,Texas,HJRes 48,117- 1,Cosponsor
+418,Peter Welch,Democratic Party,Vermont,HJRes 48,117- 1,Cosponsor
+419,Donald S. Beyer Jr.,Democratic Party,Virginia,HJRes 48,117- 1,Cosponsor
+420,Adam Smith,Democratic Party,Washington,HJRes 48,117- 1,Cosponsor
+421,Suzan K. DelBene,Democratic Party,Washington,HJRes 48,117- 1,Cosponsor
+422,Derek Kilmer,Democratic Party,Washington,HJRes 48,117- 1,Cosponsor
+423,Mark Pocan,Democratic Party,Wisconsin,HJRes 48,117- 1,Cosponsor
+424,Eleanor Holmes Norton,Democratic Party,the District of Columbia,HJRes 48,117- 1,Cosponsor
+425,George William Norris,Republican Party,Nebraska,SJRes 9,69- 1,Primary
+426,Michael R. Turner,Republican Party,Ohio,HJRes 57,111- 1,Primary
+427,Jo Bonner,Republican Party,Alabama,HJRes 57,111- 1,Cosponsor
+428,Mike Rogers,Republican Party,Alabama,HJRes 57,111- 1,Cosponsor
+429,Spencer Thomas Bachus III,Republican Party,Alabama,HJRes 57,111- 1,Cosponsor
+430,Don E. Young,Republican Party,Alaska,HJRes 57,111- 1,Cosponsor
+431,John B. Shadegg,Republican Party,Arizona,HJRes 57,111- 1,Cosponsor
+432,Trent Franks,Republican Party,Arizona,HJRes 57,111- 1,Cosponsor
+433,Jeff Flake,Republican Party,Arizona,HJRes 57,111- 1,Cosponsor
+434,John Boozman,Republican Party,Arkansas,HJRes 57,111- 1,Cosponsor
+435,Gary G. Miller,Republican Party,California,HJRes 57,111- 1,Cosponsor
+436,Ken S. Calvert,Republican Party,California,HJRes 57,111- 1,Cosponsor
+437,Elton W. Gallegly,Republican Party,California,HJRes 57,111- 1,Cosponsor
+438,Howard P. McKeon,Republican Party,California,HJRes 57,111- 1,Cosponsor
+439,Duncan D. Hunter,Republican Party,California,HJRes 57,111- 1,Cosponsor
+440,Walter Herger,Republican Party,California,HJRes 57,111- 1,Cosponsor
+441,Jerry Lewis,Republican Party,California,HJRes 57,111- 1,Cosponsor
+442,Tom McClintock,Republican Party,California,HJRes 57,111- 1,Cosponsor
+443,Brian P. Bilbray,Republican Party,California,HJRes 57,111- 1,Cosponsor
+444,Devin G. Nunes,Republican Party,California,HJRes 57,111- 1,Cosponsor
+445,Doug Lamborn,Republican Party,Colorado,HJRes 57,111- 1,Cosponsor
+446,Mike Coffman,Republican Party,Colorado,HJRes 57,111- 1,Cosponsor
+447,Bill Posey,Republican Party,Florida,HJRes 57,111- 1,Cosponsor
+448,Jeff Miller,Republican Party,Florida,HJRes 57,111- 1,Cosponsor
+449,Mario Diaz-Balart,Republican Party,Florida,HJRes 57,111- 1,Cosponsor
+450,Clifford B. Stearns,Republican Party,Florida,HJRes 57,111- 1,Cosponsor
+451,C. W. Bill Young,Republican Party,Florida,HJRes 57,111- 1,Cosponsor
+452,John L. Mica,Republican Party,Florida,HJRes 57,111- 1,Cosponsor
+453,Virginia Brown-Waite,Republican Party,Florida,HJRes 57,111- 1,Cosponsor
+454,Paul C. Broun Jr.,Republican Party,Georgia,HJRes 57,111- 1,Cosponsor
+455,Tom Price,Republican Party,Georgia,HJRes 57,111- 1,Cosponsor
+456,Phil Gingrey,Republican Party,Georgia,HJRes 57,111- 1,Cosponsor
+457,Lynn A. Westmoreland,Republican Party,Georgia,HJRes 57,111- 1,Cosponsor
+458,John Linder,Republican Party,Georgia,HJRes 57,111- 1,Cosponsor
+459,Jack Kingston,Republican Party,Georgia,HJRes 57,111- 1,Cosponsor
+460,John M. Shimkus,Republican Party,Illinois,HJRes 57,111- 1,Cosponsor
+461,Donald A. Manzullo,Republican Party,Illinois,HJRes 57,111- 1,Cosponsor
+462,Timothy V. Johnson,Republican Party,Illinois,HJRes 57,111- 1,Cosponsor
+463,Mike Pence,Republican Party,Indiana,HJRes 57,111- 1,Cosponsor
+464,Dan L. Burton,Republican Party,Indiana,HJRes 57,111- 1,Cosponsor
+465,Mark Edward Souder,Republican Party,Indiana,HJRes 57,111- 1,Cosponsor
+466,Steve A. King,Republican Party,Iowa,HJRes 57,111- 1,Cosponsor
+467,Todd Tiahrt,Republican Party,Kansas,HJRes 57,111- 1,Cosponsor
+468,Geoff Davis,Republican Party,Kentucky,HJRes 57,111- 1,Cosponsor
+469,Harold Rogers,Republican Party,Kentucky,HJRes 57,111- 1,Cosponsor
+470,Rodney M. Alexander,Republican Party,Louisiana,HJRes 57,111- 1,Cosponsor
+471,John Fleming,Republican Party,Louisiana,HJRes 57,111- 1,Cosponsor
+472,Charles W. Boustany Jr.,Republican Party,Louisiana,HJRes 57,111- 1,Cosponsor
+473,Roscoe G. Bartlett,Republican Party,Maryland,HJRes 57,111- 1,Cosponsor
+474,Peter Hoekstra,Republican Party,Michigan,HJRes 57,111- 1,Cosponsor
+475,Dave Lee Camp,Republican Party,Michigan,HJRes 57,111- 1,Cosponsor
+476,John Paul Kline,Republican Party,Minnesota,HJRes 57,111- 1,Cosponsor
+477,Michele Marie Bachmann,Republican Party,Minnesota,HJRes 57,111- 1,Cosponsor
+478,W. Todd Akin,Republican Party,Missouri,HJRes 57,111- 1,Cosponsor
+479,Blaine Luetkemeyer,Republican Party,Missouri,HJRes 57,111- 1,Cosponsor
+480,Sam B. Graves,Republican Party,Missouri,HJRes 57,111- 1,Cosponsor
+481,Dennis Rehberg,Republican Party,Montana,HJRes 57,111- 1,Cosponsor
+482,Lee R. Terry,Republican Party,Nebraska,HJRes 57,111- 1,Cosponsor
+483,Dean Heller,Republican Party,Nevada,HJRes 57,111- 1,Cosponsor
+484,Scott Garrett,Republican Party,New Jersey,HJRes 57,111- 1,Cosponsor
+485,Leonard Lance,Republican Party,New Jersey,HJRes 57,111- 1,Cosponsor
+486,Christopher John Lee,Republican Party,New York,HJRes 57,111- 1,Cosponsor
+487,Peter T. King,Republican Party,New York,HJRes 57,111- 1,Cosponsor
+488,Walter B. Jones Jr.,Republican Party,North Carolina,HJRes 57,111- 1,Cosponsor
+489,Virginia Foxx,Republican Party,North Carolina,HJRes 57,111- 1,Cosponsor
+490,Sue W. Myrick,Republican Party,North Carolina,HJRes 57,111- 1,Cosponsor
+491,Howard Coble,Republican Party,North Carolina,HJRes 57,111- 1,Cosponsor
+492,Steven C. LaTourette,Republican Party,Ohio,HJRes 57,111- 1,Cosponsor
+493,Robert E. Latta,Republican Party,Ohio,HJRes 57,111- 1,Cosponsor
+494,Jean Schmidt,Republican Party,Ohio,HJRes 57,111- 1,Cosponsor
+495,Patrick J. Tiberi,Republican Party,Ohio,HJRes 57,111- 1,Cosponsor
+496,Steve Austria,Republican Party,Ohio,HJRes 57,111- 1,Cosponsor
+497,John A. Boehner,Republican Party,Ohio,HJRes 57,111- 1,Cosponsor
+498,Tom Cole,Republican Party,Oklahoma,HJRes 57,111- 1,Cosponsor
+499,Frank D. Lucas,Republican Party,Oklahoma,HJRes 57,111- 1,Cosponsor
+500,Greg P. Walden,Republican Party,Oregon,HJRes 57,111- 1,Cosponsor
+501,Joseph R. Pitts,Republican Party,Pennsylvania,HJRes 57,111- 1,Cosponsor
+502,Todd R. Platts,Republican Party,Pennsylvania,HJRes 57,111- 1,Cosponsor
+503,Bill Shuster,Republican Party,Pennsylvania,HJRes 57,111- 1,Cosponsor
+504,James Gresham Barrett,Republican Party,South Carolina,HJRes 57,111- 1,Cosponsor
+505,Joe G. Wilson,Republican Party,South Carolina,HJRes 57,111- 1,Cosponsor
+506,Marsha W. Blackburn,Republican Party,Tennessee,HJRes 57,111- 1,Cosponsor
+507,Zach Wamp,Republican Party,Tennessee,HJRes 57,111- 1,Cosponsor
+508,David P. Roe,Republican Party,Tennessee,HJRes 57,111- 1,Cosponsor
+509,John J. Duncan Jr.,Republican Party,Tennessee,HJRes 57,111- 1,Cosponsor
+510,Louie B. Gohmert Jr.,Republican Party,Texas,HJRes 57,111- 1,Cosponsor
+511,Sam Robert Johnson,Republican Party,Texas,HJRes 57,111- 1,Cosponsor
+512,Kenny Ewell Marchant,Republican Party,Texas,HJRes 57,111- 1,Cosponsor
+513,John Abney Culberson,Republican Party,Texas,HJRes 57,111- 1,Cosponsor
+514,Pete A. Sessions,Republican Party,Texas,HJRes 57,111- 1,Cosponsor
+515,Pete Olson,Republican Party,Texas,HJRes 57,111- 1,Cosponsor
+516,Ralph M. Hall,Republican Party,Texas,HJRes 57,111- 1,Cosponsor
+517,Ted Poe,Republican Party,Texas,HJRes 57,111- 1,Cosponsor
+518,Michael C. Burgess,Republican Party,Texas,HJRes 57,111- 1,Cosponsor
+519,John R. Carter,Republican Party,Texas,HJRes 57,111- 1,Cosponsor
+520,Kay Granger,Republican Party,Texas,HJRes 57,111- 1,Cosponsor
+521,Jeb Hensarling,Republican Party,Texas,HJRes 57,111- 1,Cosponsor
+522,Randy Neugebauer,Republican Party,Texas,HJRes 57,111- 1,Cosponsor
+523,Michael T. McCaul,Republican Party,Texas,HJRes 57,111- 1,Cosponsor
+524,Rob Bishop,Republican Party,Utah,HJRes 57,111- 1,Cosponsor
+525,J. Randy Forbes,Republican Party,Virginia,HJRes 57,111- 1,Cosponsor
+526,Eric I. Cantor,Republican Party,Virginia,HJRes 57,111- 1,Cosponsor
+527,Bob W. Goodlatte,Republican Party,Virginia,HJRes 57,111- 1,Cosponsor
+528,David G. Reichert,Republican Party,Washington,HJRes 57,111- 1,Cosponsor
+529,Shelley Moore Capito,Republican Party,West Virginia,HJRes 57,111- 1,Cosponsor
+530,F. James Sensenbrenner Jr.,Republican Party,Wisconsin,HJRes 57,111- 1,Cosponsor
+531,Pramila Jayapal,Democratic Party,Washington,HJRes 48,116- 1,Primary
+532,Raúl M. Grijalva,Democratic Party,Arizona,HJRes 48,116- 1,Cosponsor
+533,Mark Takano,Democratic Party,California,HJRes 48,116- 1,Cosponsor
+534,Ro Khanna,Democratic Party,California,HJRes 48,116- 1,Cosponsor
+535,Mark DeSaulnier,Democratic Party,California,HJRes 48,116- 1,Cosponsor
+536,Barbara Lee,Democratic Party,California,HJRes 48,116- 1,Cosponsor
+537,Jared Huffman,Democratic Party,California,HJRes 48,116- 1,Cosponsor
+538,Salud Carbajal,Democratic Party,California,HJRes 48,116- 1,Cosponsor
+539,Doris O. Matsui,Democratic Party,California,HJRes 48,116- 1,Cosponsor
+540,Nanette Barragán,Democratic Party,California,HJRes 48,116- 1,Cosponsor
+541,Ted Lieu,Democratic Party,California,HJRes 48,116- 1,Cosponsor
+542,Mike Michael Thompson,Democratic Party,California,HJRes 48,116- 1,Cosponsor
+543,Alan S. Lowenthal,Democratic Party,California,HJRes 48,116- 1,Cosponsor
+544,Zoe Lofgren,Democratic Party,California,HJRes 48,116- 1,Cosponsor
+545,Ami Bera,Democratic Party,California,HJRes 48,116- 1,Cosponsor
+546,Judy M. Chu,Democratic Party,California,HJRes 48,116- 1,Cosponsor
+547,Anna G. Eshoo,Democratic Party,California,HJRes 48,116- 1,Cosponsor
+548,Grace F. Napolitano,Democratic Party,California,HJRes 48,116- 1,Cosponsor
+549,Maxine Waters,Democratic Party,California,HJRes 48,116- 1,Cosponsor
+550,Katie Porter,Democratic Party,California,HJRes 48,116- 1,Cosponsor
+551,Jerry McNerney,Democratic Party,California,HJRes 48,116- 1,Cosponsor
+552,Jackie Speier,Democratic Party,California,HJRes 48,116- 1,Cosponsor
+553,Ed Perlmutter,Democratic Party,Colorado,HJRes 48,116- 1,Cosponsor
+554,Joe Neguse,Democratic Party,Colorado,HJRes 48,116- 1,Cosponsor
+555,Al Lawson,Democratic Party,Florida,HJRes 48,116- 1,Cosponsor
+556,Henry C. Johnson Jr.,Democratic Party,Georgia,HJRes 48,116- 1,Cosponsor
+557,Tulsi Gabbard,Democratic Party,Hawaii,HJRes 48,116- 1,Cosponsor
+558,Janice D. Schakowsky,Democratic Party,Illinois,HJRes 48,116- 1,Cosponsor
+559,Jesús G. García,Democratic Party,Illinois,HJRes 48,116- 1,Cosponsor
+560,Danny K. Davis,Democratic Party,Illinois,HJRes 48,116- 1,Cosponsor
+561,Chellie Pingree,Democratic Party,Maine,HJRes 48,116- 1,Cosponsor
+562,Jamie Raskin,Democratic Party,Maryland,HJRes 48,116- 1,Cosponsor
+563,Elijah E. Cummings,Democratic Party,Maryland,HJRes 48,116- 1,Cosponsor
+564,Seth Moulton,Democratic Party,Massachusetts,HJRes 48,116- 1,Cosponsor
+565,Stephen F. Lynch,Democratic Party,Massachusetts,HJRes 48,116- 1,Cosponsor
+566,Joseph P. Kennedy III,Democratic Party,Massachusetts,HJRes 48,116- 1,Cosponsor
+567,Ayanna Pressley,Democratic Party,Massachusetts,HJRes 48,116- 1,Cosponsor
+568,James P. McGovern,Democratic Party,Massachusetts,HJRes 48,116- 1,Cosponsor
+569,Lori Trahan,Democratic Party,Massachusetts,HJRes 48,116- 1,Cosponsor
+570,William R. Keating,Democratic Party,Massachusetts,HJRes 48,116- 1,Cosponsor
+571,Katherine M. Clark,Democratic Party,Massachusetts,HJRes 48,116- 1,Cosponsor
+572,Rashida Tlaib,Democratic Party,Michigan,HJRes 48,116- 1,Cosponsor
+573,Betty Louise McCollum,Democratic Party,Minnesota,HJRes 48,116- 1,Cosponsor
+574,Ilhan Omar,Democratic Party,Minnesota,HJRes 48,116- 1,Cosponsor
+575,Angie Craig,Democratic Party,Minnesota,HJRes 48,116- 1,Cosponsor
+576,Dean Phillips,Democratic Party,Minnesota,HJRes 48,116- 1,Cosponsor
+577,Tom Malinowski,Democratic Party,New Jersey,HJRes 48,116- 1,Cosponsor
+578,Debra A. Haaland,Democratic Party,New Mexico,HJRes 48,116- 1,Cosponsor
+579,Paul Tonko,Democratic Party,New York,HJRes 48,116- 1,Cosponsor
+580,Yvette D. Clarke,Democratic Party,New York,HJRes 48,116- 1,Cosponsor
+581,Alexandria Ocasio-Cortez,Democratic Party,New York,HJRes 48,116- 1,Cosponsor
+582,Brian M. Higgins,Democratic Party,New York,HJRes 48,116- 1,Cosponsor
+583,Eliot L. Engel,Democratic Party,New York,HJRes 48,116- 1,Cosponsor
+584,Jerrold L. Nadler,Democratic Party,New York,HJRes 48,116- 1,Cosponsor
+585,Alma Adams,Democratic Party,North Carolina,HJRes 48,116- 1,Cosponsor
+586,Tim J. Ryan,Democratic Party,Ohio,HJRes 48,116- 1,Cosponsor
+587,Marcy Kaptur,Democratic Party,Ohio,HJRes 48,116- 1,Cosponsor
+588,Marcia L. Fudge,Democratic Party,Ohio,HJRes 48,116- 1,Cosponsor
+589,Suzanne Bonamici,Democratic Party,Oregon,HJRes 48,116- 1,Cosponsor
+590,Earl Blumenauer,Democratic Party,Oregon,HJRes 48,116- 1,Cosponsor
+591,Peter A. DeFazio,Democratic Party,Oregon,HJRes 48,116- 1,Cosponsor
+592,Matthew A. Cartwright,Democratic Party,Pennsylvania,HJRes 48,116- 1,Cosponsor
+593,Brendan Boyle,Democratic Party,Pennsylvania,HJRes 48,116- 1,Cosponsor
+594,David N. Cicilline,Democratic Party,Rhode Island,HJRes 48,116- 1,Cosponsor
+595,Peter Welch,Democratic Party,Vermont,HJRes 48,116- 1,Cosponsor
+596,Donald Beyer,Democratic Party,Virginia,HJRes 48,116- 1,Cosponsor
+597,Adam Smith,Democratic Party,Washington,HJRes 48,116- 1,Cosponsor
+598,Suzan K. DelBene,Democratic Party,Washington,HJRes 48,116- 1,Cosponsor
+599,Derek Kilmer,Democratic Party,Washington,HJRes 48,116- 1,Cosponsor
+600,Denny Heck,Democratic Party,Washington,HJRes 48,116- 1,Cosponsor
+601,Kim Schrier,Democratic Party,Washington,HJRes 48,116- 1,Cosponsor
+602,Mark Pocan,Democratic Party,Wisconsin,HJRes 48,116- 1,Cosponsor
+603,Gwen Moore,Democratic Party,Wisconsin,HJRes 48,116- 1,Cosponsor
+604,Eleanor Holmes Norton,Democratic Party,the District of Columbia,HJRes 48,116- 1,Cosponsor
+605,John T. Doolittle,Republican Party,California,HJRes 21,106- 1,Primary
+606,Robert E. Cramer Jr.,Democratic Party,Alabama,HJRes 21,106- 1,Cosponsor
+607,Robert Stump,Republican Party,Arizona,HJRes 21,106- 1,Cosponsor
+608,Gary G. Miller,Republican Party,California,HJRes 21,106- 1,Cosponsor
+609,Richard W. Pombo,Republican Party,California,HJRes 21,106- 1,Cosponsor
+610,Thomas G. Tancredo,Republican Party,Colorado,HJRes 21,106- 1,Cosponsor
+611,Mark Adam Foley,Republican Party,Florida,HJRes 21,106- 1,Cosponsor
+612,Charles W. Norwood Jr.,Republican Party,Georgia,HJRes 21,106- 1,Cosponsor
+613,Nathan Deal,Republican Party,Georgia,HJRes 21,106- 1,Cosponsor
+614,Helen Chenoweth-Hage,Republican Party,Idaho,HJRes 21,106- 1,Cosponsor
+615,Donald A. Manzullo,Republican Party,Illinois,HJRes 21,106- 1,Cosponsor
+616,Thomas W. Ewing,Republican Party,Illinois,HJRes 21,106- 1,Cosponsor
+617,Dan L. Burton,Republican Party,Indiana,HJRes 21,106- 1,Cosponsor
+618,Ed Whitfield,Republican Party,Kentucky,HJRes 21,106- 1,Cosponsor
+619,Roscoe G. Bartlett,Republican Party,Maryland,HJRes 21,106- 1,Cosponsor
+620,Gilbert W. Gutknecht,Republican Party,Minnesota,HJRes 21,106- 1,Cosponsor
+621,Collin Clark Peterson,Democratic Party,Minnesota,HJRes 21,106- 1,Cosponsor
+622,James A. Gibbons,Republican Party,Nevada,HJRes 21,106- 1,Cosponsor
+623,John E. Sweeney,Republican Party,New York,HJRes 21,106- 1,Cosponsor
+624,Cass Ballenger,Republican Party,North Carolina,HJRes 21,106- 1,Cosponsor
+625,Ed Bryant,Republican Party,Tennessee,HJRes 21,106- 1,Cosponsor
+626,Van Hilleary,Republican Party,Tennessee,HJRes 21,106- 1,Cosponsor
+627,Ralph M. Hall,Democratic Party,Texas,HJRes 21,106- 1,Cosponsor
+628,Virgil H. Goode Jr.,Independent,Virginia,HJRes 21,106- 1,Cosponsor
+629,Mark A. Green,Republican Party,Wisconsin,HJRes 21,106- 1,Cosponsor
+630,Barbara L. Cubin,Republican Party,Wyoming,HJRes 21,106- 1,Cosponsor
+631,Rice Alexander Pierce,Democratic Party,Tennessee,HRes 30,52- 1,Primary
+632,Bob Inglis,Republican Party,South Carolina,HJRes 3,104- 1,Primary
+633,Spencer Thomas Bachus III,Republican Party,Alabama,HJRes 3,104- 1,Cosponsor
+634,Terry Everett,Republican Party,Alabama,HJRes 3,104- 1,Cosponsor
+635,Matt Salmon,Republican Party,Arizona,HJRes 3,104- 1,Cosponsor
+636,John B. Shadegg,Republican Party,Arizona,HJRes 3,104- 1,Cosponsor
+637,Robert Stump,Republican Party,Arizona,HJRes 3,104- 1,Cosponsor
+638,Jay Dickey,Republican Party,Arkansas,HJRes 3,104- 1,Cosponsor
+639,Tim Hutchinson,Republican Party,Arkansas,HJRes 3,104- 1,Cosponsor
+640,William P. Baker,Republican Party,California,HJRes 3,104- 1,Cosponsor
+641,Sonny Bono,Republican Party,California,HJRes 3,104- 1,Cosponsor
+642,Ken S. Calvert,Republican Party,California,HJRes 3,104- 1,Cosponsor
+643,C. Christopher Cox,Republican Party,California,HJRes 3,104- 1,Cosponsor
+644,Randall H. Cunningham,Republican Party,California,HJRes 3,104- 1,Cosponsor
+645,Robert Kenneth Dornan,Republican Party,California,HJRes 3,104- 1,Cosponsor
+646,Jay Kim,Republican Party,California,HJRes 3,104- 1,Cosponsor
+647,Ron Packard,Republican Party,California,HJRes 3,104- 1,Cosponsor
+648,George P. Radanovich,Republican Party,California,HJRes 3,104- 1,Cosponsor
+649,Frank D. Riggs,Republican Party,California,HJRes 3,104- 1,Cosponsor
+650,Edward R. Royce,Republican Party,California,HJRes 3,104- 1,Cosponsor
+651,Frank D. Riggs,Republican Party,California,HJRes 3,104- 1,Cosponsor
+652,Frank D. Riggs,Republican Party,California,HJRes 3,104- 1,Cosponsor
+653,Wayne A. Allard,Republican Party,Colorado,HJRes 3,104- 1,Cosponsor
+654,Scott McInnis,Republican Party,Colorado,HJRes 3,104- 1,Cosponsor
+655,Porter J. Goss,Republican Party,Florida,HJRes 3,104- 1,Cosponsor
+656,David J. Weldon Jr.,Republican Party,Florida,HJRes 3,104- 1,Cosponsor
+657,Helen Chenoweth-Hage,Republican Party,Idaho,HJRes 3,104- 1,Cosponsor
+658,Philip M. Crane,Republican Party,Illinois,HJRes 3,104- 1,Cosponsor
+659,Ray H. LaHood,Republican Party,Illinois,HJRes 3,104- 1,Cosponsor
+660,David M. McIntosh,Republican Party,Indiana,HJRes 3,104- 1,Cosponsor
+661,Greg Ganske,Republican Party,Iowa,HJRes 3,104- 1,Cosponsor
+662,Ron Lewis,Republican Party,Kentucky,HJRes 3,104- 1,Cosponsor
+663,Ed Whitfield,Republican Party,Kentucky,HJRes 3,104- 1,Cosponsor
+664,James O. McCrery III,Republican Party,Louisiana,HJRes 3,104- 1,Cosponsor
+665,James Longley,Republican Party,Maine,HJRes 3,104- 1,Cosponsor
+666,Peter I. Blute,Republican Party,Massachusetts,HJRes 3,104- 1,Cosponsor
+667,Dick Chrysler,Republican Party,Michigan,HJRes 3,104- 1,Cosponsor
+668,Peter Hoekstra,Republican Party,Michigan,HJRes 3,104- 1,Cosponsor
+669,Nick Smith,Republican Party,Michigan,HJRes 3,104- 1,Cosponsor
+670,James A. Barcia,Democratic Party,Michigan,HJRes 3,104- 1,Cosponsor
+671,Collin Clark Peterson,Democratic Party,Minnesota,HJRes 3,104- 1,Cosponsor
+672,David Minge,Democratic Party,Minnesota,HJRes 3,104- 1,Cosponsor
+673,James M. Talent,Republican Party,Missouri,HJRes 3,104- 1,Cosponsor
+674,Melton D. Hancock,Republican Party,Missouri,HJRes 3,104- 1,Cosponsor
+675,Jon Lynn Christensen,Republican Party,Nebraska,HJRes 3,104- 1,Cosponsor
+676,John Eric Ensign,Republican Party,Nevada,HJRes 3,104- 1,Cosponsor
+677,Charles F. Bass,Republican Party,New Hampshire,HJRes 3,104- 1,Cosponsor
+678,Michael P. Forbes,Republican Party,New York,HJRes 3,104- 1,Cosponsor
+679,Gerald Brooks Hunt Solomon,Republican Party,New York,HJRes 3,104- 1,Cosponsor
+680,Fred Heineman,Republican Party,North Carolina,HJRes 3,104- 1,Cosponsor
+681,Richard M. Burr,Republican Party,North Carolina,HJRes 3,104- 1,Cosponsor
+682,Walter B. Jones Jr.,Republican Party,North Carolina,HJRes 3,104- 1,Cosponsor
+683,Sue W. Myrick,Republican Party,North Carolina,HJRes 3,104- 1,Cosponsor
+684,Steve J. Chabot,Republican Party,Ohio,HJRes 3,104- 1,Cosponsor
+685,Thomas A. Coburn,Republican Party,Oklahoma,HJRes 3,104- 1,Cosponsor
+686,Thomas A. Coburn,Republican Party,Oklahoma,HJRes 3,104- 1,Cosponsor
+687,Thomas A. Coburn,Republican Party,Oklahoma,HJRes 3,104- 1,Cosponsor
+688,Wes Cooley,Republican Party,Oregon,HJRes 3,104- 1,Cosponsor
+689,Jon D. Fox,Republican Party,Pennsylvania,HJRes 3,104- 1,Cosponsor
+690,Lindsey O. Graham,Republican Party,South Carolina,HJRes 3,104- 1,Cosponsor
+691,Marshall Sanford,Republican Party,South Carolina,HJRes 3,104- 1,Cosponsor
+692,Richard K. Armey,Republican Party,Texas,HJRes 3,104- 1,Cosponsor
+693,Lamar S. Smith,Republican Party,Texas,HJRes 3,104- 1,Cosponsor
+694,Mac M. Thornberry,Republican Party,Texas,HJRes 3,104- 1,Cosponsor
+695,Steve Stockman,Republican Party,Texas,HJRes 3,104- 1,Cosponsor
+696,Jack Milton Fields Jr.,Republican Party,Texas,HJRes 3,104- 1,Cosponsor
+697,Thomas M. Davis III,Republican Party,Virginia,HJRes 3,104- 1,Cosponsor
+698,Jennifer B. Dunn,Republican Party,Washington,HJRes 3,104- 1,Cosponsor
+699,Jack Metcalf,Republican Party,Washington,HJRes 3,104- 1,Cosponsor
+700,George R. Nethercutt Jr.,Republican Party,Washington,HJRes 3,104- 1,Cosponsor
+701,Linda Smith,Republican Party,Washington,HJRes 3,104- 1,Cosponsor
+702,Randy J. Tate,Republican Party,Washington,HJRes 3,104- 1,Cosponsor
+703,Toby A. Roth,Republican Party,Wisconsin,HJRes 3,104- 1,Cosponsor
+704,Barbara L. Cubin,Republican Party,Wyoming,HJRes 3,104- 1,Cosponsor
+705,Ernest J. Istook Jr.,Republican Party,Oklahoma,HJRes 53,106- 1,Primary
+706,Spencer Thomas Bachus III,Republican Party,Alabama,HJRes 53,106- 1,Cosponsor
+707,John D. Hayworth Jr.,Republican Party,Arizona,HJRes 53,106- 1,Cosponsor
+708,Jay Dickey,Republican Party,Arkansas,HJRes 53,106- 1,Cosponsor
+709,Tom Campbell,Republican Party,California,HJRes 53,106- 1,Cosponsor
+710,C. Christopher Cox,Republican Party,California,HJRes 53,106- 1,Cosponsor
+711,John T. Doolittle,Republican Party,California,HJRes 53,106- 1,Cosponsor
+712,Walter Herger,Republican Party,California,HJRes 53,106- 1,Cosponsor
+713,Howard P. McKeon,Republican Party,California,HJRes 53,106- 1,Cosponsor
+714,Ken S. Calvert,Republican Party,California,HJRes 53,106- 1,Cosponsor
+715,Gary G. Miller,Republican Party,California,HJRes 53,106- 1,Cosponsor
+716,Bob Schaffer,Republican Party,Colorado,HJRes 53,106- 1,Cosponsor
+717,Thomas G. Tancredo,Republican Party,Colorado,HJRes 53,106- 1,Cosponsor
+718,Joel Hefley,Republican Party,Colorado,HJRes 53,106- 1,Cosponsor
+719,Christopher H. Shays,Republican Party,Connecticut,HJRes 53,106- 1,Cosponsor
+720,Mark Adam Foley,Republican Party,Florida,HJRes 53,106- 1,Cosponsor
+721,Dan Miller,Republican Party,Florida,HJRes 53,106- 1,Cosponsor
+722,Clifford B. Stearns,Republican Party,Florida,HJRes 53,106- 1,Cosponsor
+723,Saxby Chambliss,Republican Party,Georgia,HJRes 53,106- 1,Cosponsor
+724,John H. Isakson,Republican Party,Georgia,HJRes 53,106- 1,Cosponsor
+725,Michael K. Simpson,Republican Party,Idaho,HJRes 53,106- 1,Cosponsor
+726,Ray H. LaHood,Republican Party,Illinois,HJRes 53,106- 1,Cosponsor
+727,John M. Shimkus,Republican Party,Illinois,HJRes 53,106- 1,Cosponsor
+728,Gerald C. Weller,Republican Party,Illinois,HJRes 53,106- 1,Cosponsor
+729,Thomas W. Ewing,Republican Party,Illinois,HJRes 53,106- 1,Cosponsor
+730,Dan L. Burton,Republican Party,Indiana,HJRes 53,106- 1,Cosponsor
+731,David M. McIntosh,Republican Party,Indiana,HJRes 53,106- 1,Cosponsor
+732,Todd Tiahrt,Republican Party,Kansas,HJRes 53,106- 1,Cosponsor
+733,Jim R. Ryun,Republican Party,Kansas,HJRes 53,106- 1,Cosponsor
+734,James O. McCrery III,Republican Party,Louisiana,HJRes 53,106- 1,Cosponsor
+735,David Vitter,Republican Party,Louisiana,HJRes 53,106- 1,Cosponsor
+736,Roscoe G. Bartlett,Republican Party,Maryland,HJRes 53,106- 1,Cosponsor
+737,Peter Hoekstra,Republican Party,Michigan,HJRes 53,106- 1,Cosponsor
+738,Gilbert W. Gutknecht,Republican Party,Minnesota,HJRes 53,106- 1,Cosponsor
+739,Jo Ann H. Emerson,Republican Party,Missouri,HJRes 53,106- 1,Cosponsor
+740,James M. Talent,Republican Party,Missouri,HJRes 53,106- 1,Cosponsor
+741,Roy Blunt,Republican Party,Missouri,HJRes 53,106- 1,Cosponsor
+742,Pat Danner,Democratic Party,Missouri,HJRes 53,106- 1,Cosponsor
+743,Lee R. Terry,Republican Party,Nebraska,HJRes 53,106- 1,Cosponsor
+744,Frank A. LoBiondo,Republican Party,New Jersey,HJRes 53,106- 1,Cosponsor
+745,Heather A. Wilson,Republican Party,New Mexico,HJRes 53,106- 1,Cosponsor
+746,Sue W. Myrick,Republican Party,North Carolina,HJRes 53,106- 1,Cosponsor
+747,Robin C. Hayes,Republican Party,North Carolina,HJRes 53,106- 1,Cosponsor
+748,Cass Ballenger,Republican Party,North Carolina,HJRes 53,106- 1,Cosponsor
+749,John R. Kasich,Republican Party,Ohio,HJRes 53,106- 1,Cosponsor
+750,Thomas A. Coburn,Republican Party,Oklahoma,HJRes 53,106- 1,Cosponsor
+751,J.C. Watts,Republican Party,Oklahoma,HJRes 53,106- 1,Cosponsor
+752,John E. Peterson,Republican Party,Pennsylvania,HJRes 53,106- 1,Cosponsor
+753,Joseph R. Pitts,Republican Party,Pennsylvania,HJRes 53,106- 1,Cosponsor
+754,W. Curtis Weldon,Republican Party,Pennsylvania,HJRes 53,106- 1,Cosponsor
+755,William F. Goodling,Republican Party,Pennsylvania,HJRes 53,106- 1,Cosponsor
+756,Jim W. DeMint,Republican Party,South Carolina,HJRes 53,106- 1,Cosponsor
+757,Marshall Sanford,Republican Party,South Carolina,HJRes 53,106- 1,Cosponsor
+758,Lindsey O. Graham,Republican Party,South Carolina,HJRes 53,106- 1,Cosponsor
+759,William Lewis Jenkins,Republican Party,Tennessee,HJRes 53,106- 1,Cosponsor
+760,John J. Duncan Jr.,Republican Party,Tennessee,HJRes 53,106- 1,Cosponsor
+761,Richard K. Armey,Republican Party,Texas,HJRes 53,106- 1,Cosponsor
+762,Ralph M. Hall,Democratic Party,Texas,HJRes 53,106- 1,Cosponsor
+763,Sam Robert Johnson,Republican Party,Texas,HJRes 53,106- 1,Cosponsor
+764,Pete A. Sessions,Republican Party,Texas,HJRes 53,106- 1,Cosponsor
+765,Virgil H. Goode Jr.,Independent,Virginia,HJRes 53,106- 1,Cosponsor
+766,Thomas M. Davis III,Republican Party,Virginia,HJRes 53,106- 1,Cosponsor
+767,Bob W. Goodlatte,Republican Party,Virginia,HJRes 53,106- 1,Cosponsor
+768,Jack Metcalf,Republican Party,Washington,HJRes 53,106- 1,Cosponsor
+769,Doc Hastings,Republican Party,Washington,HJRes 53,106- 1,Cosponsor
+770,George R. Nethercutt Jr.,Republican Party,Washington,HJRes 53,106- 1,Cosponsor
+771,Thomas E. Petri,Republican Party,Wisconsin,HJRes 53,106- 1,Cosponsor
+772,Paul D. Ryan,Republican Party,Wisconsin,HJRes 53,106- 1,Cosponsor
+773,Barbara L. Cubin,Republican Party,Wyoming,HJRes 53,106- 1,Cosponsor
+774,Robert C. Byrd,Democratic Party,West Virginia,SJRes 15,105- 1,Primary
+775,Wendell Hampton Ford,Democratic Party,Kentucky,SJRes 15,105- 1,Cosponsor
+776,Trent Lott,Republican Party,Mississippi,SJRes 15,105- 1,Cosponsor
+777,Robert Smith,Republican Party,New Hampshire,SJRes 15,105- 1,Cosponsor
+778,Ernest F. Hollings,Democratic Party,South Carolina,SJRes 15,105- 1,Cosponsor
+779,Steve A. King,Republican Party,Iowa,HJRes 30,115- 1,Primary
+780,John Edward Raker,Democratic Party,California,HJRes 1,65- 2,Primary
+781,H. L. Callahan,Republican Party,Alabama,HJRes 88,104- 1,Primary
+782,Terry Everett,Republican Party,Alabama,HJRes 88,104- 1,Cosponsor
+783,Robert Stump,Republican Party,Arizona,HJRes 88,104- 1,Cosponsor
+784,James A. Traficant Jr.,Democratic Party,Ohio,HJRes 88,104- 1,Cosponsor
+785,James P. McGovern,Democratic Party,Massachusetts,HJRes 88,115- 1,Primary
+786,Raúl M. Grijalva,Democratic Party,Arizona,HJRes 88,115- 1,Cosponsor
+787,Mark Takano,Democratic Party,California,HJRes 88,115- 1,Cosponsor
+788,Ted Lieu,Democratic Party,California,HJRes 88,115- 1,Cosponsor
+789,Barbara Lee,Democratic Party,California,HJRes 88,115- 1,Cosponsor
+790,David Loebsack,Democratic Party,Iowa,HJRes 88,115- 1,Cosponsor
+791,Chellie Pingree,Democratic Party,Maine,HJRes 88,115- 1,Cosponsor
+792,Stephen F. Lynch,Democratic Party,Massachusetts,HJRes 88,115- 1,Cosponsor
+793,Michael E. Capuano,Democratic Party,Massachusetts,HJRes 88,115- 1,Cosponsor
+794,William R. Keating,Democratic Party,Massachusetts,HJRes 88,115- 1,Cosponsor
+795,Katherine M. Clark,Democratic Party,Massachusetts,HJRes 88,115- 1,Cosponsor
+796,Niki S. Tsongas,Democratic Party,Massachusetts,HJRes 88,115- 1,Cosponsor
+797,Peter A. DeFazio,Democratic Party,Oregon,HJRes 88,115- 1,Cosponsor
+798,James R. Langevin,Democratic Party,Rhode Island,HJRes 88,115- 1,Cosponsor
+799,Jim Cooper,Democratic Party,Tennessee,HJRes 88,115- 1,Cosponsor
+800,Steve Cohen,Democratic Party,Tennessee,HJRes 88,115- 1,Cosponsor
+801,Peter Welch,Democratic Party,Vermont,HJRes 88,115- 1,Cosponsor
+802,Andy Biggs,Republican Party,Arizona,HJRes 40,117- 1,Primary
+803,Mo Brooks,Republican Party,Alabama,HJRes 40,117- 1,Cosponsor
+804,Paul A. Gosar,Republican Party,Arizona,HJRes 40,117- 1,Cosponsor
+805,Ken Buck,Republican Party,Colorado,HJRes 40,117- 1,Cosponsor
+806,Jody B. Hice,Republican Party,Georgia,HJRes 40,117- 1,Cosponsor
+807,Yvette Herrell,Republican Party,New Mexico,HJRes 40,117- 1,Cosponsor
+808,Ted Budd,Republican Party,North Carolina,HJRes 40,117- 1,Cosponsor
+809,Dan Bishop,Republican Party,North Carolina,HJRes 40,117- 1,Cosponsor
+810,Bob Gibbs,Republican Party,Ohio,HJRes 40,117- 1,Cosponsor
+811,Louie B. Gohmert Jr.,Republican Party,Texas,HJRes 40,117- 1,Cosponsor
+812,Randy K. Weber Sr.,Republican Party,Texas,HJRes 40,117- 1,Cosponsor
+813,Lance Gooden,Republican Party,Texas,HJRes 40,117- 1,Cosponsor
+814,Robert G. Good,Republican Party,Virginia,HJRes 40,117- 1,Cosponsor
+815,Robert C. Byrd,Democratic Party,West Virginia,SJRes 35,109- 2,Primary
+816,Saxby Chambliss,Republican Party,Georgia,SJRes 35,109- 2,Cosponsor
+817,Trent Lott,Republican Party,Mississippi,SJRes 35,109- 2,Cosponsor
+818,Thad Cochran,Republican Party,Mississippi,SJRes 35,109- 2,Cosponsor
+819,Elizabeth H. Dole,Republican Party,North Carolina,SJRes 35,109- 2,Cosponsor
+820,James M. Inhofe,Republican Party,Oklahoma,SJRes 35,109- 2,Cosponsor
+821,John D. Rockefeller IV,Democratic Party,West Virginia,SJRes 35,109- 2,Cosponsor
+822,Karl Earl Mundt,Republican Party,South Dakota,SJRes 12,87- 1,Primary
+823,John Little McClellan,Democratic Party,Arkansas,SJRes 12,87- 1,Cosponsor
+824,Thruston Ballard Morton,Republican Party,Kentucky,SJRes 12,87- 1,Cosponsor
+825,Roman Lee Hruska,Republican Party,Nebraska,SJRes 12,87- 1,Cosponsor
+826,J. Strom Thurmond,Republican Party,South Carolina,SJRes 12,87- 1,Cosponsor
+827,William Arvis Blakley,Democratic Party,Texas,SJRes 12,87- 1,Cosponsor
+828,David Henry Mercer,Republican Party,Nebraska,HRes 72,53- 1,Primary
+829,James P. McGovern,Democratic Party,Massachusetts,HJRes 23,114- 1,Primary
+830,Raúl M. Grijalva,Democratic Party,Arizona,HJRes 23,114- 1,Cosponsor
+831,Sam Farr,Democratic Party,California,HJRes 23,114- 1,Cosponsor
+832,Barbara Lee,Democratic Party,California,HJRes 23,114- 1,Cosponsor
+833,Mark Takano,Democratic Party,California,HJRes 23,114- 1,Cosponsor
+834,Grace F. Napolitano,Democratic Party,California,HJRes 23,114- 1,Cosponsor
+835,David Loebsack,Democratic Party,Iowa,HJRes 23,114- 1,Cosponsor
+836,Chellie Pingree,Democratic Party,Maine,HJRes 23,114- 1,Cosponsor
+837,Stephen F. Lynch,Democratic Party,Massachusetts,HJRes 23,114- 1,Cosponsor
+838,Katherine M. Clark,Democratic Party,Massachusetts,HJRes 23,114- 1,Cosponsor
+839,Joseph P. Kennedy III,Democratic Party,Massachusetts,HJRes 23,114- 1,Cosponsor
+840,Michael E. Capuano,Democratic Party,Massachusetts,HJRes 23,114- 1,Cosponsor
+841,William R. Keating,Democratic Party,Massachusetts,HJRes 23,114- 1,Cosponsor
+842,Keith Maurice Ellison,Democratic Party,Minnesota,HJRes 23,114- 1,Cosponsor
+843,Bill J. Pascrell Jr.,Democratic Party,New Jersey,HJRes 23,114- 1,Cosponsor
+844,Peter A. DeFazio,Democratic Party,Oregon,HJRes 23,114- 1,Cosponsor
+845,Earl Blumenauer,Democratic Party,Oregon,HJRes 23,114- 1,Cosponsor
+846,James R. Langevin,Democratic Party,Rhode Island,HJRes 23,114- 1,Cosponsor
+847,Steve Cohen,Democratic Party,Tennessee,HJRes 23,114- 1,Cosponsor
+848,Jim Cooper,Democratic Party,Tennessee,HJRes 23,114- 1,Cosponsor
+849,Peter Welch,Democratic Party,Vermont,HJRes 23,114- 1,Cosponsor
+850,Jim A. McDermott,Democratic Party,Washington,HJRes 23,114- 1,Cosponsor
+851,Samuel Willis Tucker Lanham,Democratic Party,Texas,HRes 31,52- 1,Primary
+852,Richard M. Nolan,Democratic Party,Minnesota,HJRes 29,113- 1,Primary
+853,Jared Huffman,Democratic Party,California,HJRes 29,113- 1,Cosponsor
+854,Matthew A. Cartwright,Democratic Party,Pennsylvania,HJRes 29,113- 1,Cosponsor
+855,Mark Pocan,Democratic Party,Wisconsin,HJRes 29,113- 1,Cosponsor
+856,John Conyers Jr.,Democratic Party,Michigan,HJRes 67,108- 1,Primary
+857,Brad J. Sherman,Democratic Party,California,HJRes 67,108- 1,Cosponsor
+858,Steve Stockman,Republican Party,Texas,HJRes 87,104- 1,Primary
+859,Matt Salmon,Republican Party,Arizona,HJRes 87,104- 1,Cosponsor
+860,Matt Salmon,Republican Party,Arizona,HJRes 87,104- 1,Cosponsor
+861,Helen Chenoweth-Hage,Republican Party,Idaho,HJRes 87,104- 1,Cosponsor
+862,Dan L. Burton,Republican Party,Indiana,HJRes 87,104- 1,Cosponsor
+863,Melton D. Hancock,Republican Party,Missouri,HJRes 87,104- 1,Cosponsor
+864,David Funderburk,Republican Party,North Carolina,HJRes 87,104- 1,Cosponsor
+865,Walter B. Jones Jr.,Republican Party,North Carolina,HJRes 87,104- 1,Cosponsor
+866,William Robert Moore,Republican Party,Tennessee,HRes 321,47- 2,Primary
+867,Robert C. Byrd,Democratic Party,West Virginia,SJRes 11,110- 1,Primary
+868,Saxby Chambliss,Republican Party,Georgia,SJRes 11,110- 1,Cosponsor
+869,John H. Isakson,Republican Party,Georgia,SJRes 11,110- 1,Cosponsor
+870,Thad Cochran,Republican Party,Mississippi,SJRes 11,110- 1,Cosponsor
+871,Trent Lott,Republican Party,Mississippi,SJRes 11,110- 1,Cosponsor
+872,Elizabeth H. Dole,Republican Party,North Carolina,SJRes 11,110- 1,Cosponsor
+873,James M. Inhofe,Republican Party,Oklahoma,SJRes 11,110- 1,Cosponsor
+874,John D. Rockefeller IV,Democratic Party,West Virginia,SJRes 11,110- 1,Cosponsor
+875,Richard Andrew Gephardt,Democratic Party,Missouri,HJRes 496,102- 2,Primary
+876,George Edward Sangmeister,Democratic Party,Illinois,HJRes 496,102- 2,Cosponsor
+877,John W. Olver,Democratic Party,Massachusetts,HJRes 496,102- 2,Cosponsor
+878,Dave Lee Camp,Republican Party,Michigan,HJRes 496,102- 2,Cosponsor
+879,Gerald Edward Sikorski,Democratic Party,Minnesota,HJRes 496,102- 2,Cosponsor
+880,Michael R. McNulty,Democratic Party,New York,HJRes 496,102- 2,Cosponsor
+881,Michael J. Kopetski,Democratic Party,Oregon,HJRes 496,102- 2,Cosponsor
+882,Bernard Sanders,Independent,Vermont,HJRes 496,102- 2,Cosponsor
+883,James R. Olin,Democratic Party,Virginia,HJRes 496,102- 2,Cosponsor
+884,Owen B. Pickett,Democratic Party,Virginia,HJRes 496,102- 2,Cosponsor
+885,Robert E. Wise Jr.,Democratic Party,West Virginia,HJRes 496,102- 2,Cosponsor
+886,Ron de Lugo,Democratic Party,Virgin Islands,HJRes 195,103- 1,Primary
+887,Eni F. H. Faleomavaega,Democratic Party,American Samoa,HJRes 195,103- 1,Cosponsor
+888,Ed Pastor,Democratic Party,Arizona,HJRes 195,103- 1,Cosponsor
+889,Howard L. Berman,Democratic Party,California,HJRes 195,103- 1,Cosponsor
+890,Ronald Vernie Dellums,Democratic Party,California,HJRes 195,103- 1,Cosponsor
+891,William Donlon Edwards,Democratic Party,California,HJRes 195,103- 1,Cosponsor
+892,Bob Filner,Democratic Party,California,HJRes 195,103- 1,Cosponsor
+893,Lucille Roybal-Allard,Democratic Party,California,HJRes 195,103- 1,Cosponsor
+894,Maxine Waters,Democratic Party,California,HJRes 195,103- 1,Cosponsor
+895,Robert T. Matsui,Democratic Party,California,HJRes 195,103- 1,Cosponsor
+896,Esteban Edward Torres,Democratic Party,California,HJRes 195,103- 1,Cosponsor
+897,Xavier Becerra,Democratic Party,California,HJRes 195,103- 1,Cosponsor
+898,Patricia Scott Schroeder,Democratic Party,Colorado,HJRes 195,103- 1,Cosponsor
+899,Alcee L. Hastings,Democratic Party,Florida,HJRes 195,103- 1,Cosponsor
+900,Carrie Meek,Democratic Party,Florida,HJRes 195,103- 1,Cosponsor
+901,Peter Deutsch,Democratic Party,Florida,HJRes 195,103- 1,Cosponsor
+902,John R. Lewis,Democratic Party,Georgia,HJRes 195,103- 1,Cosponsor
+903,Robert A. Underwood,Democratic Party,Guam,HJRes 195,103- 1,Cosponsor
+904,Patsy Takemoto Mink,Democratic Party,Hawaii,HJRes 195,103- 1,Cosponsor
+905,Neil Abercrombie,Democratic Party,Hawaii,HJRes 195,103- 1,Cosponsor
+906,Cardiss Collins,Democratic Party,Illinois,HJRes 195,103- 1,Cosponsor
+907,Kweisi Mfume,Democratic Party,Maryland,HJRes 195,103- 1,Cosponsor
+908,Barney Frank,Democratic Party,Massachusetts,HJRes 195,103- 1,Cosponsor
+909,David E. Bonior,Democratic Party,Michigan,HJRes 195,103- 1,Cosponsor
+910,Barbara-Rose Collins,Democratic Party,Michigan,HJRes 195,103- 1,Cosponsor
+911,Timothy Joseph Penny,Democratic Party,Minnesota,HJRes 195,103- 1,Cosponsor
+912,Collin Clark Peterson,Democratic Party,Minnesota,HJRes 195,103- 1,Cosponsor
+913,Martin Olav Sabo,Democratic Party,Minnesota,HJRes 195,103- 1,Cosponsor
+914,Bruce F. Vento,Democratic Party,Minnesota,HJRes 195,103- 1,Cosponsor
+915,Bennie G. Thompson,Democratic Party,Mississippi,HJRes 195,103- 1,Cosponsor
+916,William Lacy Clay Sr.,Democratic Party,Missouri,HJRes 195,103- 1,Cosponsor
+917,Robert Menendez,Democratic Party,New Jersey,HJRes 195,103- 1,Cosponsor
+918,Charles B. Rangel,Democratic Party,New York,HJRes 195,103- 1,Cosponsor
+919,José E. Serrano,Democratic Party,New York,HJRes 195,103- 1,Cosponsor
+920,Eliot L. Engel,Democratic Party,New York,HJRes 195,103- 1,Cosponsor
+921,Maurice D. Hinchey,Democratic Party,New York,HJRes 195,103- 1,Cosponsor
+922,Peter A. DeFazio,Democratic Party,Oregon,HJRes 195,103- 1,Cosponsor
+923,Austin John Murphy,Democratic Party,Pennsylvania,HJRes 195,103- 1,Cosponsor
+924,Ronald D’Emory Coleman,Democratic Party,Texas,HJRes 195,103- 1,Cosponsor
+925,Eligio II de la Garza,Democratic Party,Texas,HJRes 195,103- 1,Cosponsor
+926,Henry Barbosa González,Democratic Party,Texas,HJRes 195,103- 1,Cosponsor
+927,Nick J. Rahall II,Democratic Party,West Virginia,HJRes 195,103- 1,Cosponsor
+928,Eleanor Holmes Norton,Democratic Party,the District of Columbia,HJRes 195,103- 1,Cosponsor

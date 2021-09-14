@@ -6,7 +6,7 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, message = FALSE)
 library(tidyverse)
 library(stringr)
 ```
@@ -267,11 +267,28 @@ group_df <- master_df %>%
 
 
 subset_df <- read_csv("data/master.csv") %>%
-  filter(title_or_description_from_source == "To repeal fifteenth amendment")%>% 
-  mutate(constitute_topic1 = "voteres+*",
+    subset(is.na(constitute_topic1)) %>% 
+    mutate(pol = str_detect(title_or_description_from_source, "(?i)referend")) %>% 
+  filter(pol == TRUE)%>% 
+  select(-pol)
+
+
+%>% 
+    filter(title_or_description_from_source %in% c("Four-year term for Members of the House of Representatives"))%>% 
+  mutate(constitute_topic1 = "lhterm")
+  
+  
+  %>% 
+  mutate(constitute_topic1 = "camppubf")
+  
+  
+  
+
          constitute_topic2 = "legpow-*",
          constitute_topic3 = "equalgr4-*",
          constitute_topic4 = "equalgr10-*")
+
+"Assignment of students in public schools"
   
   mutate(pol = str_detect(title_or_description_from_source, "(?i)electoral (?i)college")) %>% 
   filter(pol == TRUE)%>% 
@@ -298,6 +315,9 @@ test_df %>% write_csv("data/master.csv")
 
 master_df <- read.csv("data/master.csv")
 
+master_df <- master_df %>% 
+  arrange(id)
+
 group_df <- master_df %>% 
   subset(is.na(constitute_topic1)) %>% 
   group_by(title_or_description_from_source) %>% 
@@ -307,7 +327,9 @@ master_df %>%
   drop_na(constitute_topic1)
 
 
-
 ```
+
+
+
 
 
