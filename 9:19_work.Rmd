@@ -1,0 +1,310 @@
+---
+title: "9/19/21 Plots"
+author: "Samuel Lowry"
+date: "9/19/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggthemes)
+library(stringr)
+library(tidyverse)
+```
+
+
+```{r}
+master_df <- read_csv("data/master.csv", col_types = cols(
+  .default = col_character(),
+  id = col_double(),
+  congress = col_double(),
+  date = col_date(),
+  congressional_session = col_double(),
+  joint_resolution_chamber = col_logical(),
+  joint_resolution_number = col_logical(),
+  committee_of_referral = col_logical(),
+  constitute_topic5 = col_logical(),
+  constitute_topic6 = col_logical(),
+  constitute_topic7 = col_logical(),
+  constitute_topic8 = col_logical(),
+  constitute_topic9 = col_logical()
+)) 
+
+dates_df <- read_csv("data/dates.csv") %>% 
+  select(id, date) %>% 
+  rename(old = date) %>% 
+  right_join(master_df) 
+write_csv(dates_df, "data/datesmaster.csv")
+
+%>% 
+  select(id, old)
+
+one_df <- master_df %>% 
+  mutate(constitute_topic1 = tolower(str_replace_all(constitute_topic1, "[^[:alnum:]]", " ")),
+         constitute_topic2 = tolower(str_replace_all(constitute_topic2, "[^[:alnum:]]", " ")),
+         constitute_topic3 = tolower(str_replace_all(constitute_topic3, "[^[:alnum:]]", " ")),
+         constitute_topic4 = tolower(str_replace_all(constitute_topic4, "[^[:alnum:]]", " ")),
+         constitute_topic5 = tolower(str_replace_all(constitute_topic5, "[^[:alnum:]]", " ")),
+         constitute_topic6 = tolower(str_replace_all(constitute_topic6, "[^[:alnum:]]", " ")),
+         constitute_topic7 = tolower(str_replace_all(constitute_topic7, "[^[:alnum:]]", " ")),
+         constitute_topic8 = tolower(str_replace_all(constitute_topic8, "[^[:alnum:]]", " ")),
+         constitute_topic9 = tolower(str_replace_all(constitute_topic9, "[^[:alnum:]]", " "))) %>% 
+  group_by(constitute_topic1) %>% 
+  summarize(n = n())
+
+two_df <- master_df %>% 
+  mutate(constitute_topic1 = tolower(str_replace_all(constitute_topic1, "[^[:alnum:]]", " ")),
+         constitute_topic2 = tolower(str_replace_all(constitute_topic2, "[^[:alnum:]]", " ")),
+         constitute_topic3 = tolower(str_replace_all(constitute_topic3, "[^[:alnum:]]", " ")),
+         constitute_topic4 = tolower(str_replace_all(constitute_topic4, "[^[:alnum:]]", " ")),
+         constitute_topic5 = tolower(str_replace_all(constitute_topic5, "[^[:alnum:]]", " ")),
+         constitute_topic6 = tolower(str_replace_all(constitute_topic6, "[^[:alnum:]]", " ")),
+         constitute_topic7 = tolower(str_replace_all(constitute_topic7, "[^[:alnum:]]", " ")),
+         constitute_topic8 = tolower(str_replace_all(constitute_topic8, "[^[:alnum:]]", " ")),
+         constitute_topic9 = tolower(str_replace_all(constitute_topic9, "[^[:alnum:]]", " "))) %>% 
+  group_by(constitute_topic2) %>% 
+  summarize(z = n()) %>% 
+  rename(constitute_topic1 = constitute_topic2) %>% 
+  right_join(one_df) %>% 
+  mutate(t = n + z)
+
+
+```
+
+```{r}
+work_df <- master_df %>% 
+  mutate(constitute_topic1 = tolower(str_replace_all(constitute_topic1, "[^[:alnum:]]", " ")),
+         constitute_topic2 = tolower(str_replace_all(constitute_topic2, "[^[:alnum:]]", " ")),
+         constitute_topic3 = tolower(str_replace_all(constitute_topic3, "[^[:alnum:]]", " ")),
+         constitute_topic4 = tolower(str_replace_all(constitute_topic4, "[^[:alnum:]]", " ")),
+         constitute_topic5 = tolower(str_replace_all(constitute_topic5, "[^[:alnum:]]", " ")),
+         constitute_topic6 = tolower(str_replace_all(constitute_topic6, "[^[:alnum:]]", " ")),
+         constitute_topic7 = tolower(str_replace_all(constitute_topic7, "[^[:alnum:]]", " ")),
+         constitute_topic8 = tolower(str_replace_all(constitute_topic8, "[^[:alnum:]]", " ")),
+         constitute_topic9 = tolower(str_replace_all(constitute_topic9, "[^[:alnum:]]", " "))) %>% 
+  mutate(topic = paste(constitute_topic1,
+                       constitute_topic2,
+                       constitute_topic3,
+                       constitute_topic4,
+                       constitute_topic5,
+                       constitute_topic6,
+                       constitute_topic7,
+                       constitute_topic8,
+                       constitute_topic9),
+         year = as.numeric(str_sub(date, 1, 4)))
+```
+
+```{r}
+depexec_df <- work_df %>% 
+  mutate(yes = str_detect(topic, "depexec")) %>% 
+  filter(yes == TRUE) 
+
+depexec_df %>% 
+  ggplot(aes(x = year)) +
+  geom_histogram(binwidth = 5, alpha = .9, color = "black", fill = "navy") +
+  labs(title = "Proposed Amendments Regarding the Vice President",
+       y = "Number of Proposed Amendments",
+       x = "Year",
+       caption = "Each bar represents five years") +
+   theme_tufte() +
+  theme(panel.grid = element_line(size = .1), legend.position = "none")
+
+ggsave("plots/depexec.png", width = 6, height = 4)
+
+balbudgt_df <- work_df %>% 
+  mutate(yes = str_detect(topic, "balbudgt")) %>% 
+  filter(yes == TRUE)
+
+balbudgt_df %>% 
+  ggplot(aes(x = year)) +
+  geom_histogram(binwidth = 5, alpha = .9, color = "black", fill = "navy") +
+  labs(title = "Proposed Amendments Regarding a Balanced Budget",
+       y = "Number of Proposed Amendments",
+       x = "Year",
+       caption = "Each bar represents five years") +
+   theme_tufte() +
+  theme(panel.grid = element_line(size = .1), legend.position = "none")
+
+ggsave("plots/balbudgt.png", width = 6, height = 4)
+
+freerel_df <- work_df %>% 
+  mutate(yes = str_detect(topic, "freerel")) %>% 
+  filter(yes == TRUE)
+
+freerel_df %>% 
+  ggplot(aes(x = year)) +
+  geom_histogram(binwidth = 5, alpha = .9, color = "black", fill = "navy") +
+  labs(title = "Proposed Amendments Regarding Freedom of Religion",
+       y = "Number of Proposed Amendments",
+       x = "Year",
+       caption = "Each bar represents five years") +
+   theme_tufte() +
+  theme(panel.grid = element_line(size = .1), legend.position = "none")
+
+ggsave("plots/freerel.png", width = 6, height = 4)
+
+legapp_df <- work_df %>% 
+  mutate(yes = str_detect(topic, "legapp")) %>% 
+  filter(yes == TRUE)
+
+legapp_df %>% 
+  ggplot(aes(x = year)) +
+  geom_histogram(binwidth = 5, alpha = .9, color = "black", fill = "navy") +
+  labs(title = "Proposed Amendments Regarding Review of Legislation",
+       y = "Number of Proposed Amendments",
+       x = "Year",
+       caption = "Each bar represents five years") +
+   theme_tufte() +
+  theme(panel.grid = element_line(size = .1), legend.position = "none")
+
+ggsave("plots/legapp.png", width = 6, height = 4)
+
+uhselect_df <- work_df %>% 
+  mutate(yes = str_detect(topic, "uhselect")) %>% 
+  filter(yes == TRUE)
+
+uhselect_df %>% 
+ ggplot(aes(x = year)) +
+  geom_histogram(binwidth = 5, alpha = .9, color = "black", fill = "navy") +
+  labs(title = "Proposed Amendments Regarding the Election of the Senate",
+       y = "Number of Proposed Amendments",
+       x = "Year",
+       caption = "Each bar represents five years") +
+   theme_tufte() +
+  theme(panel.grid = element_line(size = .1), legend.position = "none")
+
+ggsave("plots/uhselect.png", width = 6, height = 4)
+
+hoselect_df <- work_df %>% 
+  mutate(yes = str_detect(topic, "hoselect")) %>% 
+  filter(yes == TRUE)
+
+hoselect_df %>% 
+  ggplot(aes(x = year)) +
+  geom_histogram(binwidth = 5, alpha = .9, color = "black", fill = "navy") +
+  labs(title = "Proposed Amendments Regarding the Election of the President",
+       y = "Number of Proposed Amendments",
+       x = "Year",
+       caption = "Each bar represents five years") +
+   theme_tufte() +
+  theme(panel.grid = element_line(size = .1), legend.position = "none")
+
+ggsave("plots/hoselect.png", width = 6, height = 4)
+
+legpow_df <- work_df %>% 
+  mutate(yes = str_detect(topic, "legpow")) %>% 
+  filter(yes == TRUE)
+
+legpow_df %>% 
+  ggplot(aes(x = year)) +
+  geom_histogram(binwidth = 5, alpha = .9, color = "black", fill = "navy") +
+  labs(title = "Proposed Amendments Regarding Legislative Powers",
+       y = "Number of Proposed Amendments",
+       x = "Year",
+       caption = "Each bar represents five years") +
+   theme_tufte() +
+  theme(panel.grid = element_line(size = .1), legend.position = "none")
+
+ggsave("plots/legpow.png", width = 6, height = 4)
+
+voteres_df <- work_df %>% 
+  mutate(yes = str_detect(topic, "voteres")) %>% 
+  filter(yes == TRUE)
+
+voteres_df %>% 
+  ggplot(aes(x = year)) +
+  geom_histogram(binwidth = 5, alpha = .9, color = "black", fill = "navy") +
+  labs(title = "Proposed Amendments Regarding Voting Rights",
+       y = "Number of Proposed Amendments",
+       x = "Year",
+       caption = "Each bar represents five years") +
+   theme_tufte() +
+  theme(panel.grid = element_line(size = .1), legend.position = "none")
+
+ggsave("plots/voteres.png", width = 6, height = 4)
+
+express_df <- work_df %>% 
+  mutate(yes = str_detect(topic, "express")) %>% 
+  filter(yes == TRUE)
+
+express_df %>% 
+  ggplot(aes(x = year)) +
+  geom_histogram(binwidth = 5, alpha = .9, color = "black", fill = "navy") +
+  labs(title = "Proposed Amendments Regarding Freedom of Expression",
+       y = "Number of Proposed Amendments",
+       x = "Year",
+       caption = "Each bar represents five years") +
+   theme_tufte() +
+  theme(panel.grid = element_line(size = .1), legend.position = "none")
+
+ggsave("plots/express.png", width = 6, height = 4)
+
+equalgr1_df <- work_df %>% 
+  mutate(yes = str_detect(topic, "equalgr1")) %>% 
+  filter(yes == TRUE)
+
+equalgr1_df %>% 
+  ggplot(aes(x = year)) +
+  geom_histogram(binwidth = 5, alpha = .9, color = "black", fill = "navy") +
+  labs(title = "Proposed Amendments Regarding Equal Rights Regardless of Gender",
+       y = "Number of Proposed Amendments",
+       x = "Year",
+       caption = "Each bar represents five years") +
+   theme_tufte() +
+  theme(panel.grid = element_line(size = .1), legend.position = "none")
+
+ggsave("plots/equalgr1.png", width = 6, height = 4)
+```
+
+```{r}
+nyear_df <- work_df %>% 
+  group_by(year) %>% 
+  summarize(n = n())
+
+%>% 
+  drop_na()
+  
+congressn_df <- read_csv("data/congress_n.csv")
+
+overlay_df <- full_join(nyear_df, congressn_df)
+
+overlay_df %>% 
+  ggplot() +
+  geom_line(aes(x = year, y = congress_n)) +
+  geom_col(aes(x = year, y = n), alpha = .5, color = "black", fill = "navy") +
+  labs(title = "Constitutional Amendments, Size of Congress, and Ratification Dates",
+       y = "Proposed Amendments | Number of Congresspeople",
+       x = "Year",
+       caption = "Each bar represents one year") +
+  geom_vline(xintercept = 1791, linetype = "dashed", color = "red") +
+  geom_text(aes(x = 1780, y = 300), family = "Times New Roman", label = "1-10", color = "red") +
+   geom_vline(xintercept = 1795, linetype = "dashed", color = "red") +
+  geom_text(aes(x = 1800, y = 350), family = "Times New Roman", label = "11", color = "red") +
+   geom_vline(xintercept = 1804, linetype = "dashed", color = "red") +
+  geom_text(aes(x = 1810, y = 300), family = "Times New Roman", label = "12", color = "red") +
+   geom_vline(xintercept = 1865, linetype = "dashed", color = "red") +
+  geom_text(aes(x = 1850, y = 350), family = "Times New Roman", label = "13, 14, 15", color = "red") +
+   geom_vline(xintercept = 1868, linetype = "dashed", color = "red") +
+   geom_vline(xintercept = 1870, linetype = "dashed", color = "red") +
+   geom_vline(xintercept = 1913, linetype = "dashed", color = "red") +
+  geom_text(aes(x = 1905, y = 400), family = "Times New Roman", label = "16-17", color = "red") +
+   geom_vline(xintercept = 1919, linetype = "dashed", color = "red") +
+  geom_text(aes(x = 1920, y = 350), family = "Times New Roman", label = "18 19", color = "red") +
+   geom_vline(xintercept = 1920, linetype = "dashed", color = "red") +
+   geom_vline(xintercept = 1933, linetype = "dashed", color = "red") +
+  geom_text(aes(x = 1933, y = 300), family = "Times New Roman", label = "20-21", color = "red") +
+   geom_vline(xintercept = 1951, linetype = "dashed", color = "red") +
+  geom_text(aes(x = 1945, y = 350), family = "Times New Roman", label = "22", color = "red") +
+   geom_vline(xintercept = 1961, linetype = "dashed", color = "red") +
+  geom_text(aes(x = 1980, y = 450), family = "Times New Roman", label = "23, 24", color = "red") +
+    geom_text(aes(x = 1983, y = 400), family = "Times New Roman", label = "25, 26", color = "red") +
+   geom_vline(xintercept = 1964, linetype = "dashed", color = "red") +
+     geom_vline(xintercept = 1967, linetype = "dashed", color = "red") +
+     geom_vline(xintercept = 1971, linetype = "dashed", color = "red") +
+       geom_vline(xintercept = 1992, linetype = "dashed", color = "red") +
+  geom_text(aes(x = 1999, y = 325), family = "Times New Roman", label = "27", color = "red") +
+   theme_tufte() +
+  theme(panel.grid = element_line(size = .1), legend.position = "none")
+
+```
+
